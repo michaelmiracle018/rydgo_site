@@ -7,39 +7,40 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const GoWrap = () => {
-	const [goItems, setGoItems] = useState(go_content);
-	const [category, setCategory] = useState("ride");
+  const [goItems, setGoItems] = useState(go_content);
+  const [category, setCategory] = useState("rides");
 
-	const location = useLocation().pathname;
-	const path = location?.substring(1);
+  const location = useLocation().pathname;
+  const path = location?.substring(1);
+  console.log(location);
 
-	useEffect(() => {
-		const filteredItems = go_content.filter(
-			(item) => item.category === category,
-		);
-		setGoItems(filteredItems);
-	}, [category]);
+  useEffect(() => {
+    const filteredItems = go_content.filter(
+      (item) => item.category === category
+    );
+    setGoItems(filteredItems);
+  }, [category]);
 
-	useEffect(() => {
-		if (path) {
-			setCategory(path);
-		}
-	}, [path]);
+  useEffect(() => {
+    if (path) {
+      setCategory(path);
+    }
+  }, [path]);
 
-	return (
+  return (
 		<>
 			<section className="go__wrap-container">
 				<div className="go__title">
-					<h2>GO</h2>
+					<h2>RIDE</h2>
 				</div>
 				<div className="">
 					<div className="go__btn-container">
 						<NavLink
-							to="/ride"
+							to="/rides"
 							className={` filter__btn ${
-								category === "ride" ? "active__btn" : ""
+								category === "rides" ? "active__btn" : ""
 							}`}
-							onClick={() => setCategory("ride")}
+							onClick={() => setCategory("rides")}
 						>
 							Rides
 						</NavLink>
@@ -50,7 +51,7 @@ const GoWrap = () => {
 							}`}
 							onClick={() => setCategory("taxi")}
 						>
-							Taxi
+							Rydgo Student
 						</NavLink>
 						<NavLink
 							to="/bike"
@@ -59,7 +60,7 @@ const GoWrap = () => {
 							}`}
 							onClick={() => setCategory("bike")}
 						>
-							Bike
+							Rydgo Extra
 						</NavLink>
 						<NavLink
 							to="/rental"
@@ -68,7 +69,7 @@ const GoWrap = () => {
 							}`}
 							onClick={() => setCategory("rental")}
 						>
-							Car Rental
+							Rydgo Taxi
 						</NavLink>
 						<NavLink
 							to="/schoolRide"
@@ -77,7 +78,7 @@ const GoWrap = () => {
 							}`}
 							onClick={() => setCategory("schoolRide")}
 						>
-							School Ride
+							Rydgo Rental
 						</NavLink>
 					</div>
 				</div>

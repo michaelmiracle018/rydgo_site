@@ -7,6 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import img from "../../assets/images/after.png";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
+import PhoneInput from "react-phone-input-2";
 
 const DriverSignUpNav = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -14,20 +15,17 @@ const DriverSignUpNav = () => {
 	const linksContainerRef = useRef(null);
 	const linksRef = useRef(null);
 	const subLinksRef = useRef(null);
-	const [countryState, setCountryState] = useState({
-		loading: false,
-		countries: [],
-		errorMessage: "",
+	const [userData, setUserData] = useState({
+		phoneNumber: "",
 	});
-	const [selectedCountry, setSelectedCountry] = useState();
-	const { loading, errorMessage, countries } = countryState;
 
-	const searchSelectedCountry = countries.find((obj) => {
-		if (obj.name.common === selectedCountry) {
-			return true;
-		}
-		return false;
-	});
+	const handlePhoneInput = (value, country) => {
+		setUserData({
+			...userData,
+			phoneNumber: value,
+			countryCode: country?.dialCode,
+		});
+	};
 
 	const openSidebar = () => {
 		setIsOpen(true);
@@ -37,34 +35,6 @@ const DriverSignUpNav = () => {
 		setIsOpen(false);
 	};
 
-	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				// fetch spinner
-				setCountryState({
-					...countryState,
-					loading: true,
-				});
-
-				//  fetch data
-				const dataUrl = `https://restcountries.com/v3.1/all`;
-				const response = await axios.get(dataUrl);
-				setCountryState({
-					...countryState,
-					countries: response.data,
-					loading: false,
-				});
-			} catch (error) {
-				setCountryState({
-					...countryState,
-					loading: false,
-					errorMessage: "Sorry Something went wrong",
-				});
-			}
-		};
-
-		fetchData();
-	}, []);
 	useEffect(() => {
 		const linksHeight = linksRef.current.getBoundingClientRect().height;
 		const smLinksHeight = subLinksRef.current.getBoundingClientRect().height;
@@ -150,35 +120,55 @@ const DriverSignUpNav = () => {
 							<form action="">
 								<h3>Create a new account</h3>
 								<div className="input__container">
-									<div className="select__input">
-										<select
-											value={selectedCountry}
-											onChange={(e) => setSelectedCountry(e.target.value)}
-										>
-											<option disabled>--Select Country--</option>
-											{countries.map((item) => {
-												return (
-													<option key={uuidv4()} value={item.name.common}>
-														{item.name.common}
-													</option>
-												);
-											})}
-										</select>
-									</div>
+									<div className="select__input"></div>
 									<div className="first__input">
-										<img
-											src={
-												searchSelectedCountry && searchSelectedCountry.flags.png
+										<PhoneInput
+											countryCodeEditable={false}
+											inputProps={{
+												name: "phone",
+												required: true,
+												autoFocus: true,
+												id: "phone",
+											}}
+											enableSearch="false"
+											disableSearchIcon="false"
+											country={"gh"}
+											value={userData.phoneNumber}
+											containerClass="containerClass"
+											buttonClass="buttonClass"
+											inputClass="inputClass"
+											regions={"africa"}
+											containerStyle={{
+												border: "0px",
+											}}
+											searchStyle={{
+												border: "2px solid #ccc",
+												fontSize: "20px",
+												color: "#ff5050",
+											}}
+											inputStyle={{
+												outline: "none",
+												boxShadow: "none",
+												borderRadius: "10px",
+												height: "52px",
+												border: "1px solid #eeecf7",
+												color: "#0c266c",
+												fontWeight: 600,
+												paddingLeft: 70,
+											}}
+											buttonStyle={{
+												border: "1px solid #eeecf7",
+												borderTopLeftRadius: "10px",
+												borderBottomLeftRadius: "10px",
+												height: "52px",
+												paddingRight: 12,
+												paddingLeft: 12,
+												backgroundColor: "#FFF",
+											}}
+											onChange={(value, country) =>
+												handlePhoneInput(value, country)
 											}
-											alt=""
 										/>
-										<p>
-											{" "}
-											{searchSelectedCountry && searchSelectedCountry.idd.root}
-											{searchSelectedCountry &&
-												searchSelectedCountry.idd.suffixes}
-										</p>
-										<input type="text" />
 									</div>
 									<div className="second__input">
 										<input type="text" placeholder="Referral ID (optional)" />

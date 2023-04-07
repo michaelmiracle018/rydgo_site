@@ -28,7 +28,7 @@ const Ride = () => {
 
 	return (
 		<>
-			<section >
+			<section>
 				<RideBanner />
 				{/* GO CONTENT  */}
 				<div>
@@ -115,7 +115,7 @@ const Ride = () => {
 
 						{/* RIDE COMFORT CONTENT*/}
 
-						<section className="ride_comfort__container" id="Comfort">
+						<section className="ride_comfort__container" id="Extra">
 							<div className="center__item">
 								<div className="ride_comfort__wrap">
 									<motion.div
@@ -145,11 +145,12 @@ const Ride = () => {
 										}}
 									>
 										<div className="ride_comfort__text ">
-											<h4 className="white__text">Comfort</h4>
+											<h4 className="white__text">Extra</h4>
 											<p className="py-6">
-												Use our Rydgo Premium rides for everyday trips and
-												commutes. We’ll get you where you need to go so you
-												don’t have to.
+												This category allows riders to share a ride with others
+												who are travelling in the same direction, which can help
+												to reduce costs and minimise the environmental impact of
+												transportation.
 											</p>
 											<WhiteButton>Book your ride</WhiteButton>
 										</div>
@@ -169,7 +170,7 @@ const Ride = () => {
 							</div>
 						</section>
 
-						<section className="slide__content-about" id="Executive">
+						<section className="slide__content-about" id="Rydgo">
 							{/* EXECUTIVE CONTENT*/}
 
 							<div className="ride__content center__item">
@@ -185,10 +186,13 @@ const Ride = () => {
 									className="text__content"
 								>
 									<div>
-										<HText>Executive</HText>
+										<HText>Rydgo</HText>
 										<p className="py-6">
-											Enjoy the ultimate convenience in a ride, with just a few
-											clicks. Travel in comfort and in style.
+											This category offers affordable, basic rides for those who
+											want to get from point A to point B without any frills
+											This category offers rides for short distances or within a
+											specific neighborhood or area, with smaller vehicles that
+											can navigate narrow streets and alleys
 										</p>
 										<RedButton>Book your ride</RedButton>
 									</div>
@@ -209,7 +213,7 @@ const Ride = () => {
 
 						{/* RIDE MAX CONTENT*/}
 
-						<section className="ride_max__container" id="Max">
+						<section className="ride_max__container" id="Premier">
 							<div className="center__item">
 								<div className="ride_max__wrap">
 									<motion.div
@@ -238,11 +242,11 @@ const Ride = () => {
 										}}
 									>
 										<div className="ride_max__text ">
-											<h4 className="white__text">Max</h4>
+											<h4 className="white__text">Premier</h4>
 											<p className="py-6">
-												Are you traveling in a big group? Take our Premium Max
-												rides; we can take up to six people to their next
-												destination.
+												This category offers a more luxurious experience, with
+												higher-end vehicles and professional drivers who are
+												trained in customer service.
 											</p>
 											<WhiteButton>Book your ride</WhiteButton>
 										</div>

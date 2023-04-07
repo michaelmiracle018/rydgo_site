@@ -19,8 +19,8 @@ const GoContent = ({ items }) => {
 									{item?.images?.map((image, index) => {
 										const { img, textImg } = image;
 										return (
-											<AnchorLink href={`#${textImg}`}>
-												<div className="img__flex" key={image.id}>
+											<AnchorLink href={`#${textImg}`} key={image.id}>
+												<div className="img__flex">
 													<img src={img} alt="" />
 													<h5 className="text-center">{textImg}</h5>
 												</div>

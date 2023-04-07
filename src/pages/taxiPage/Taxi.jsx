@@ -28,6 +28,14 @@ const Taxi = () => {
 			<TaxiBanner />
 
 			{/* 
+			<div className="flex flex-col justify-center items-center my-20 mx-10">
+
+            <h4 className="text-5xl font-bold">Taxi</h4>
+			<small className="text-xl mt-2 text-[#ff0000]">
+			Ghana’s most affordable ride.
+			</small>
+
+            </div>
 		
 			<div className="flex justify-center items-center my-20 mx-10">
 			<h4 className="text-5xl font-bold">Rydgo Taxi</h4>
