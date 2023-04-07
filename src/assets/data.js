@@ -17,6 +17,7 @@ import vanTaxi from "../assets/images/van_taxi_58d4223ef8.png";
 import taxiCar from "../assets/images/taxi_car_3113f165e9.png";
 
 export const subLinks = [
+
 	{ id: "1", name: "Rides", url: "/rides", category: "RIDE" },
 	{ id: "2", name: "RydgoStudent", url: "/taxi", category: "RIDE" },
 	{ id: "3", name: "RydgoExtra", url: "/bike", category: "RIDE" },
@@ -34,6 +35,24 @@ export const subLinks = [
 	{ id: "13", name: "RydPharm", url: "/ride", category: "GET" },
 	// { id: "14", name: "Flowers", url: "/ride", category: "GET" },
 	// { id: "15", name: "Tickets", url: "/ride", category: "GET" },
+  { id: "1", name: "Rydgo", url: "/ride", category: "GO" },
+  { id: "2", name: "RydgoTaxi", url: "/taxi", category: "GO" },
+  { id: "3", name: "RydgoExtra", url: "/bike", category: "GO" },
+  { id: "4", name: "RydgoStudent", url: "/schoolride", category: "GO" },
+  { id: "5", name: "RydgoRental", url: "/rental", category: "GO" },
+
+  { id: "6", name: "Food", url: "/food", category: "EAT" },
+  { id: "7", name: "RydineOut", url: "/dineout", category: "EAT" },
+
+  { id: "8", name: "RydGro", url: "/rydgro", category: "GET" },
+  { id: "9", name: "RydSuper", url: "/rydsuper", category: "GET" },
+  { id: "10", name: "RydDrop", url: "/ryddrop", category: "GET" },
+  { id: "11", name: "RydSparkle", url: "/rydsparkle", category: "GET" },
+  { id: "12", name: "RydLaundry", url: "/rydlaundry", category: "GET" },
+  { id: "13", name: "RydWell", url: "/rydwell", category: "GET" },
+  { id: "14", name: "RydPharm", url: "/rydpharm", category: "GET" },
+  { id: "15", name: "RydTour", url: "/rydtour", category: "GET" },
+
 
 	{ id: "16", name: "RydPay", url: "/rydpay", category: "PAY" },
 	{ id: "17", name: "RydGive", url: "/rydgive", category: "PAY" },

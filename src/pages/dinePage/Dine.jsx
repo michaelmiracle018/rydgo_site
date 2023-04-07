@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DineBanner from "../component/banner/dinebanner/DineBanner";
-import DineBannerImage from "../../assets/images/Rectangle15.png";
+// import DineBannerImage from "../../assets/images/Rectangle15.png";
 import "../ridePage/ride.scss";
 import HText from "../../shared/HText";
 import RedButton from "../../shared/RedButton";
