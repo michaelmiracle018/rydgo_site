@@ -47,17 +47,17 @@
 			position: absolute;
 			z-index: 2;
 
-			@media screen and (max-width: 1006px) {
+			@media screen and (max-width: 1200px) {
 				display: none;
 			}
 		}
 		.car1 {
-			bottom: 180px;
-			left: 500px;
+			bottom: 170px;
+			left: 530px;
 		}
 		.car2 {
 			bottom: 90px;
-			left: 700px;
+			left: 730px;
 		}
 		.car3 {
 			bottom: 0px;
