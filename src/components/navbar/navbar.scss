@@ -1,0 +1,151 @@
+article {
+	height: 75px;
+	background: #ffffff;
+	border-bottom: 0.5px solid #eaeaea;
+	.navbar__container {
+		width: var(--width);
+		max-width: var(--max-width);
+		margin: 1rem auto;
+		z-index: 10;
+
+		.navbar__sub-container {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			// * =====LOGO STYLES=====
+
+			img {
+				object-fit: cover;
+				width: 10rem;
+				// margin-right: 3.5rem;
+			}
+			// * LINKS STYLES
+			.links__content {
+				& ul {
+					display: none;
+					justify-content: space-between;
+					gap: 0.7rem;
+
+					li {
+						font-style: normal;
+						font-weight: 700;
+						font-size: 14px;
+						line-height: 140.62%;
+						padding-right: 5px;
+						font-family: "Inter-Light";
+						margin-top: 0.2rem;
+						cursor: pointer;
+
+						&:hover {
+							color: var(--light-red);
+						}
+
+						&:after {
+							content: "";
+							display: block;
+							width: 0;
+							height: 2px;
+							background: var(--light-red);
+							transition: width 0.3s;
+							margin-top: 0.2rem;
+						}
+						&:hover::after {
+							width: 100%;
+
+							transition: var(--transition);
+						}
+					}
+
+					@media screen and (min-width: 1269px) {
+						& {
+							display: flex;
+						}
+					}
+				}
+			}
+		}
+		// * RIGHT CONTENT STYLES
+		.right__content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 1rem;
+			.btn__wrap {
+				button {
+					height: 44px;
+					padding: 0 10px 0 10px;
+					background: var(--red-color-hex);
+					border-radius: 5px;
+					font-family: "Montserrat-regular";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 15px;
+					color: var(--clr-white);
+					cursor: pointer;
+					transition: var(--transition);
+
+					@media screen and (max-width: 470px){
+						&{
+							display: none;
+						}
+						
+					}
+					&:hover {
+						transform: translateY(-8px);
+					}
+				}
+
+			}
+
+			.language__wrap {
+				display: none;
+				justify-content: space-between;
+				align-items: center;
+				gap: 0.7rem;
+
+				.world__icon {
+					img {
+						width: 15px;
+						height: 15px;
+					}
+				}
+				.text {
+					font-family: "Inter-Light";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 140.62%;
+					padding-right: 5px;
+				}
+
+				.down__icon {
+					img {
+						height: 10px;
+						width: 10px;
+					}
+				}
+
+				@media screen and (min-width: 1269px) {
+					& {
+						display: flex;
+					}
+				}
+			}
+			.hamburger {
+				display: none;
+				font-size: 2rem;
+				background-color: var(--clr-white);
+				cursor: pointer;
+
+				@media screen and (max-width: 1269px) {
+					& {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

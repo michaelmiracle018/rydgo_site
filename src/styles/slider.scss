@@ -1,0 +1,13 @@
+.slide__content {
+ 	
+    width: 100%;
+    overflow: hidden;
+    div {
+        // height: 400px;
+        max-height: 400px;
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}

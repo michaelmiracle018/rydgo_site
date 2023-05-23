@@ -1,0 +1,113 @@
+.section__nav-container {
+	display: none;
+	position: relative;
+	@media screen and (min-width: 1269px) {
+		& {
+			display: block;
+		}
+	}
+	.servicesNav__content {
+		width: 100%;
+		height: 220px;
+		background-color: var(--light-blue);
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		position: absolute;
+		top: -62px;
+
+		.servicesNav__wrap {
+			padding-top: 20px;
+			width: var(--width);
+			max-width: 1400px;
+			margin: auto;
+			.links__content {
+				display: flex;
+
+				justify-content: space-between;
+				// align-items: center;
+
+				ul {
+					display: block;
+					.active__btn {
+						color: var(--red-color-hex);
+
+						&:after {
+							content: "";
+							border-left: 2px solid var(--red-color-hex);
+							height: 30px;
+							position: absolute;
+							left: 200px;
+							z-index: 10;
+						}
+					}
+					li {
+						// position: relative;
+						padding: 10px;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 17px;
+						line-height: 17px;
+						color: var(--black-color);
+						padding-right: 5px;
+						font-family: "Montserrat-regular";
+						margin-top: 0.2rem;
+						cursor: pointer;
+					}
+				}
+
+				.line {
+					position: absolute;
+					border-left: 2px solid rgb(202, 206, 202);
+					height: 220px;
+					left: 200px;
+					top: 0px;
+				}
+				.sub__links-content {
+					margin-top: 1rem;
+					a {
+						background-color: rgb(228, 167, 167);
+						padding: 15px;
+						width: 100%;
+						margin: 10px;
+						border-radius: 5px;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 17px;
+						line-height: 17px;
+						color: var(--black-color);
+						font-family: "Montserrat-regular";
+					}
+				}
+
+				.close__btn {
+					.icon__btn {
+						font-size: 20px;
+						border-radius: 50%;
+						background-color: var(--clr-white);
+						width: 25px;
+						height: 25px;
+						cursor: pointer;
+						padding: 3px;
+						&:hover {
+							background: rgba(0, 0, 0, 0.2);
+							color: var(--clr-white);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.service__overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		top: 100px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		// display: none;
+		z-index: -1;
+	}
+}
