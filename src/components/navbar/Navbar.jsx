@@ -39,6 +39,8 @@ const Navbar = () => {
 		});
 
 		return () => window.removeEventListener("scroll", null);
+
+		
 	}, []);
 
 	return (
