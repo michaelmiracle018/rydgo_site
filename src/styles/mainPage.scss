@@ -6,9 +6,6 @@
 	background-attachment: fixed;
 	z-index: -1;
 	.main__page-content {
-		width: var(--width);
-		max-width: 1280px;
-		margin: 1rem auto;
 		// * SLIDE AND ABOUT STYLES
 
 		// *ABOUT STYLES
@@ -53,29 +50,64 @@
 		}
 		.car1 {
 			bottom: 170px;
-			left: 530px;
+			left: 630px;
 		}
 		.car2 {
 			bottom: 90px;
-			left: 730px;
+			left: 870px;
 		}
 		.car3 {
 			bottom: 0px;
-			left: 950px;
+			left: 1150px;
 		}
-		// * CAPTAIN STYLES
 
-		.captain__content {
-			position: relative;
-			width: 100%;
-			height: 100%;
-			background-image: url("../assets/images/Rectangle15.png");
-			background-size: cover;
-			background-attachment: fixed;
+		// ! SOCIAL IMPART STYLES
+
+		.social__content {
+			margin-top: 150px;
+			display: flex;
+			justify-content: space-between;
+			gap: 150px;
+			margin-bottom: 5rem;
+			@media screen and (max-width: 1006px) {
+				flex-direction: column-reverse;
+				align-items: center;
+				gap: 40px;
+				margin-top: 60px;
+			}
+
+			.social__text-content {
+				p {
+					font-family: "Inter-Light";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 24px;
+					line-height: 140.62%;
+					color: #000000;
+					width: 500px;
+
+					@media screen and (max-width: 563px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	// * CAPTAIN STYLES
+
+	.captain__container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-image: url("../assets/images/Rectangle15.png");
+		background-size: cover;
+		background-attachment: fixed;
+		.captain__wrap {
 			margin: 70px 0;
 			display: flex;
 			justify-content: space-between;
-			padding: 4rem 5rem;
+			padding: 3rem 0rem;
 			// gap: 40px;
 
 			@media screen and (max-width: 1118px) {
@@ -111,37 +143,32 @@
 				}
 			}
 		}
+	}
+	// *OUR BLOG STYLES
+	.our__blog {
+		width: 100%;
+		height: 100%;
+		background-image: url("../assets/images/Rectangle15.png");
+		background-size: cover;
+		background-attachment: fixed;
+		padding-top: 2rem;
+		.our__blog-content {
+			padding-top: 2rem;
+			padding-bottom: 3rem;
+			h3 {
+				font-family: "Inter-Light";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 50px;
+				line-height: 140.62%;
+				color: #ffffff;
 
-		// ! SOCIAL IMPART STYLES
-
-		.social__content {
-			margin-top: 150px;
-			display: flex;
-			justify-content: space-between;
-			gap: 150px;
-
-			@media screen and (max-width: 1006px) {
-				flex-direction: column-reverse;
-				align-items: center;
-				gap: 40px;
-				margin-top: 60px;
-			}
-			
-			.social__text-content {
-				p {
-					font-family: "Inter-Light";
-					font-style: normal;
-					font-weight: 500;
-					font-size: 24px;
-					line-height: 140.62%;
-					color: #000000;
-					width: 500px;
-
-					@media screen and (max-width: 563px) {
-						width: 100%;
-					}
+				@media screen and (max-width: 1293px) {
+					text-align: center;
 				}
 			}
+
+			
 		}
 	}
 }

@@ -23,7 +23,7 @@ const Sidebar = ({ setIsOpen, isOpen }) => {
 							>
 								<span>Services</span>
 								<div>
-									{isOpenServices ? <FaChevronDown /> : <FaChevronUp />}{" "}
+									{isOpenServices ? <FaChevronUp /> : <FaChevronDown />}{" "}
 								</div>
 							</div>
 							{isOpenServices && <ServicesSidebar />}
