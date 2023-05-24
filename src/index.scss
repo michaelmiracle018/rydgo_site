@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// ====== CSS VARIABLES======
+:root {
+	--red-color-hex: #ff1e00;
+	--red-color-rgb: rgba(255, 30, 0, 255);
+	--light-red: #ff5050;
+
+	--black-color: #000;
+	--transition: all 0.3s linear;
+	--clr-white: #fff;
+	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	--radius: 0.25rem;
+	--fixed-width: 620px;
+	--clr-grey: hsl(210, 22%, 49%);
+	--width: 95%;
+	--max-width: 1300px;
+	--light-blue: rgb(218, 237, 238);
+}
+
+body {
+	font-family: "Montserrat-regular";
+	background: #fff;
+	line-height: 1.5;
+	font-size: 0.875rem;
+}
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+button {
+	border: 0;
+	outline: none;
+}
+
+.header__shrink {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 99999;
+	box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.link {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 17px;
+	color: var(--black-color);
+	padding-right: 5px;
+	font-family: "Montserrat-regular";
+	margin-bottom: 0.7rem;
+	margin-top: 0.9rem;
+}
+
+.sub__links {
+	a {
+		display: block;
+		margin: 0.4rem 4rem;
+		// width: fit-content;
+		padding: 0.5rem;
+	}
+}
+
+.heading__text {
+	font-family: "Inter-Light";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 130.62%;
+	color: #000000;
+}
+
+.red__btn {
+	font-family: "Inter-Light";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 140.62%;
+	color: #ffffff;
+	width: 135px;
+	height: 40px;
+	background: linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.2),
+			rgba(255, 255, 255, 0.2)
+		),
+		#ff0000;
+	border-radius: 5px;
+}
+
+.white__btn {
+	font-family: "Inter-Light";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 140.62%;
+	color: #000;
+	width: 135px;
+	height: 40px;
+	background: linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.2),
+			rgba(255, 255, 255, 0.2)
+		),
+		#ffffff;
+	border-radius: 5px;
+}
+
+.white__text {
+	font-family: "Inter-Light";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 140.62%;
+	color: #ffffff;
+}
