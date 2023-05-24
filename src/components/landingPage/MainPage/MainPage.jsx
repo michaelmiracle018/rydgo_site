@@ -5,7 +5,7 @@ import HText from "../../../shared/HText";
 import RedButton from "../../../shared/RedButton";
 import WhiteButton from "../../../shared/WhiteButton";
 import womanImage from "../../../assets/images/happy-woman.png";
-import happyWoman from "../../../assets/images/smiley-woman-holding-up-her-car-keys 1.png";
+import womanCaptain from "../../../assets/images/captain_main.JPG";
 import car1 from "../../../assets/images/hyundai_PNG11217 1.png";
 import car2 from "../../../assets/images/red-hyundai-car-png-15 2.png";
 import youngMan from "../../../assets/images/portrait-young-handsome-male 1.png";
@@ -88,7 +88,11 @@ const MainPage = () => {
 								variants={imageAnimate}
 							>
 								<div className="captain__img">
-									<img src={happyWoman} alt="" />
+									<img
+										src={womanCaptain}
+										alt="womanDriver"
+										style={{ width: "580px", borderRadius: "25px" }}
+									/>
 								</div>
 							</motion.div>
 							<motion.div
@@ -208,7 +212,7 @@ const MainPage = () => {
 						<motion.div
 							initial="hidden"
 							whileInView="visible"
-							viewport={{ once: true, amount: .7 }}
+							viewport={{ once: true, amount: 0.7 }}
 							variants={container}
 							className="blog__cards"
 						>

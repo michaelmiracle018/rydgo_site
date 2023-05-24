@@ -5,6 +5,7 @@ import img1 from "../../assets/images/slideOne.png";
 import img2 from "../../assets/images/slideTwo.png";
 import img3 from "../../assets/images/HEADER.png";
 
+
 const Slide = () => {
 	const settings = {
 		dots: true,

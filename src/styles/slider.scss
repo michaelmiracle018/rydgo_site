@@ -1,6 +1,7 @@
 .slide__content {
- 	
-    width: 100%;
+ 	width: var(--width);
+	max-width: 1280px;
+    margin: auto;
     overflow: hidden;
     div {
         // height: 400px;
