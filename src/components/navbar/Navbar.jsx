@@ -7,7 +7,10 @@ import { FaChevronUp, FaChevronDown, FaTimes } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import ServicesNav from "./ServicesNav";
 import Sidebar from "./Sidebar";
+
 import world from "../../assets/svg/world.svg";
+
+
 import arrowDown from "../../assets/svg/arrow_down.svg";
 
 const Navbar = () => {
