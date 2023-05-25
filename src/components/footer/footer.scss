@@ -1,0 +1,122 @@
+.footer__container {
+	width: var(--width);
+	max-width: 1300px;
+	margin: auto;
+	.footer__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		@media screen and (max-width: 1170px) {
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+		}
+
+		// * =======LEFT FOOTER CONTENT======
+		.left__footer-content {
+			img {
+				object-fit: cover;
+				width: 137px;
+				height: 40px;
+				margin: 0 1rem 1rem 1rem;
+				cursor: pointer;
+			}
+		}
+
+		// * =======MIDDLE FOOTER CONTENT======
+
+		.footer__services {
+			padding-left: -6rem;
+		}
+
+		h3 {
+			font-family: "Inter-Light";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 20px;
+			color: rgb(243, 65, 65);
+			margin-bottom: 1rem;
+			@media screen and (max-width: 1170px) {
+				text-align: center;
+			}
+		}
+
+		ul {
+			li {
+				font-family: "Inter-Light";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 15px;
+				margin: 0.5rem 0 0.5rem 0;
+				cursor: pointer;
+				@media screen and (max-width: 1170px) {
+					text-align: center;
+				}
+			}
+		}
+		// }
+		// * =======RIGHT FOOTER CONTENT======
+		.right__footer-content {
+			margin: 0 1rem 0rem 1rem;
+			& > div {
+				margin: 0rem 0 1rem 0;
+				display: flex;
+				font-family: "Inter-Light";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				cursor: pointer;
+				.left__icon {
+					margin-right: 0.7rem;
+					margin-top: 0.2rem;
+				}
+				.right__icon {
+					margin-left: 0.5rem;
+				}
+			}
+		}
+	}
+
+	// * =======BELOW FOOTER CONTENT======
+	.below__footer-content {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid #ccc;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		@media screen and (max-width: 1170px) {
+			align-items: center;
+			flex-direction: column-reverse;
+			border-top: none;
+			padding-top: 0px;
+		}
+
+		& > div {
+			margin: 0rem 0 1rem 0;
+		}
+
+		.footer__rights {
+			font-family: "Inter-Light";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+		}
+		.footer__terms {
+			h4 {
+				font-family: "Inter-Light";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				cursor: pointer;
+				&:hover {
+					color: rgb(243, 65, 65);
+				}
+			}
+		}
+		.footer__social-icons {
+			img {
+				cursor: pointer;
+			}
+		}
+	}
+}
