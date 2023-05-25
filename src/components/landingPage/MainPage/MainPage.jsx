@@ -137,7 +137,7 @@ const MainPage = () => {
 					viewport={{ once: false, amount: 0.5 }}
 					transition={{ staggerChildren: 0.5 }}
 				>
-					<div className="about__content center__item">
+					<div className="engineer__content center__item">
 						<div className="text__content">
 							<motion.div variants={textAnimate}>
 								<HText>Engineering at Rydgo</HText>

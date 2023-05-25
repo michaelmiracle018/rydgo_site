@@ -13,7 +13,8 @@
 		.about__content {
 			margin-top: 150px;
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
+			align-items: center;
 			gap: 150px;
 
 			@media screen and (max-width: 1006px) {
@@ -40,6 +41,43 @@
 		}
 
 		// * END OF SLIDE AND ABOUT STYLES
+
+
+
+		// *ENGINEER STYLES
+		.engineer__content {
+			margin-top: 150px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 150px;
+
+			@media screen and (max-width: 1006px) {
+				flex-direction: column;
+				align-items: center;
+				gap: 40px;
+				margin-top: 20px;
+			}
+			.text__content {
+				p {
+					font-family: "Inter-Light";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 24px;
+					line-height: 140.62%;
+					color: #000000;
+					width: 500px;
+
+					@media screen and (max-width: 563px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+// END OF ENGINEER STYLING
+
+
 		// ! CAR STYLING
 		.car__image {
 			position: absolute;
@@ -62,12 +100,13 @@
 			left: 1150px;
 		}
 
-		// ! SOCIAL IMPART STYLES
+		// ! SOCIAL IMPACT STYLES
 
 		.social__content {
 			margin-top: 150px;
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
+			align-items: center;
 			gap: 150px;
 			margin-bottom: 5rem;
 			@media screen and (max-width: 1006px) {
@@ -107,9 +146,10 @@
 		.captain__wrap {
 			margin: 70px 0;
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
+			align-items: 0;
 			padding: 3rem 0rem;
-			// gap: 40px;
+			gap: 40px;
 
 			@media screen and (max-width: 1118px) {
 				flex-direction: column-reverse;
@@ -124,7 +164,7 @@
 			}
 			.captain__text {
 				margin-left: 4rem;
-				margin-top: 3rem;
+				margin-top: 2rem;
 				@media screen and (max-width: 1118px) {
 					margin-top: 0.5rem;
 				}
