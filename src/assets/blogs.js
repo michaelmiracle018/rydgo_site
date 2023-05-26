@@ -1,6 +1,7 @@
 import deliveryMan from "../assets/images/delivery-man.png";
 import image1 from "../assets/images/man-wearing-smart.png";
 import image02 from "../assets/images/happy-african-people 1.png";
+
 const blogs = [
 	{
 		id: 1,

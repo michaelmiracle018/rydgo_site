@@ -1,0 +1,159 @@
+.driver__container {
+	width: var(--full-width);
+	// 	max-width: var(--max-width);
+	// 	margin: auto;
+
+	// * HERO CONTAINER STYLES
+	.hero__container {
+		// padding: 0 1rem;
+		.hero__img {
+			img {
+				width: 100%;
+			}
+		}
+
+		.hero__content {
+			width: 100%;
+			background-color: var(--red-color-hex);
+			border-radius: 15% 0 0 0;
+			text-align: center;
+			h1 {
+				font-style: normal;
+				font-weight: 900;
+				font-size: 34px;
+				padding-right: 5px;
+				font-family: "Inter-Bold";
+				padding-top: 1.7rem;
+				color: #fff;
+			}
+
+			.hero__para1 {
+				color: #fff;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 20px;
+				padding-right: 5px;
+				font-family: "Inter-light";
+				margin-top: 1rem;
+				padding-right: 5px;
+				padding-left: 5px;
+			}
+
+			.hero__download {
+				display: flex;
+				gap: 2rem;
+				justify-content: center;
+				padding: 1.5rem 0;
+				flex-wrap: wrap;
+				img {
+					cursor: pointer;
+					width: 100%;
+					max-width: 300px;
+				}
+			}
+		}
+
+		.hero__paragraph-text {
+			padding-bottom: 1.7rem;
+			p {
+				color: #fff;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 20px;
+				padding-right: 5px;
+				font-family: "Inter-light";
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	// * ====DRIVER CARD INFO STYLES====
+
+	.driver__card-info-container {
+		width: var(--full-width);
+		max-width: var(--max-width);
+		margin: auto;
+		margin-top: 4rem;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 30px;
+
+		.single__card-info {
+			width: 360px;
+			height: 100%;
+			background-color: #fbf4f4;
+			.card__img {
+				margin-top: 2rem;
+				display: flex;
+				justify-content: center;
+				img {
+					width: 120px;
+				}
+			}
+			.card__info-text {
+				margin: 1rem 2rem;
+				text-align: center;
+
+				h4 {
+					font-style: normal;
+					font-weight: 900;
+					font-size: 22px;
+					padding-right: 5px;
+					font-family: "Inter-Bold";
+					padding-bottom: 1rem;
+					color: #000;
+				}
+				p {
+					font-style: normal;
+					font-weight: 900;
+					font-size: 16px;
+					padding-right: 5px;
+					font-family: "Inter-Light";
+					padding-bottom: 1rem;
+					color: #000;
+				}
+			}
+		}
+	}
+
+	// * ====END OF DRIVER CARD INFO STYLES====
+
+	// * ====STEPS TO FOLLOW STYLES====
+	.driver__steps-container {
+		margin-top: 3rem;
+		width: 100%;
+		height: 700px;
+		background: linear-gradient(
+			43.28deg,
+			#9a1403 17.81%,
+			rgb(243, 65, 65) 85.69%
+		);
+		clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%, 0% 50%);
+
+		h2 {
+			font-style: normal;
+			font-weight: 900;
+			font-size: 40px;
+			padding-right: 5px;
+			font-family: "Inter-Bold";
+			text-align: center;
+			padding-bottom: 1rem;
+			color: #fff;
+			padding-top: 3rem;
+		}
+
+		.drive__steps-info {
+			display: flex;
+			gap: 40px;
+			.drive__steps-img-wrap {
+				img {
+				}
+			}
+		}
+
+		.drive__steps-btn {
+		}
+	}
+}

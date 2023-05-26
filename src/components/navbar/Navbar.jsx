@@ -10,7 +10,6 @@ import Sidebar from "./Sidebar";
 
 import world from "../../assets/svg/world.svg";
 
-
 import arrowDown from "../../assets/svg/arrow_down.svg";
 
 const Navbar = () => {
@@ -39,8 +38,6 @@ const Navbar = () => {
 		});
 
 		return () => window.removeEventListener("scroll", null);
-
-		
 	}, []);
 
 	return (
@@ -50,7 +47,9 @@ const Navbar = () => {
 					{/* LOGO CONTENT
 					// <div className="logo__links-wrap">
 				*/}
-					<img src={rydgo_logo} alt="rydgo" />
+					<Link to="/">
+						<img src={rydgo_logo} alt="rydgo" />
+					</Link>
 					{/* LINKS CONTENT*/}
 
 					<div className="links__content">
@@ -60,7 +59,10 @@ const Navbar = () => {
 							</li>
 							<li>Our Services</li>
 							<li>Riders</li>
-							<li>Drivers</li>
+							<Link to="/driver">
+								<li>Drivers</li>
+							</Link>
+
 							<li>About Us</li>
 							<li>Contact us</li>
 						</ul>

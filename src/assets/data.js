@@ -1,4 +1,8 @@
-const subLinks = [
+import deliveryMan from "../assets/images/delivery-man.png";
+import image1 from "../assets/images/man-wearing-smart.png";
+import image02 from "../assets/images/happy-african-people 1.png";
+
+export const subLinks = [
 	{ id: "1", name: "Rides", url: "/ride", category: "GO" },
 	{ id: "2", name: "Taxi", url: "/ride", category: "GO" },
 	{ id: "3", name: "Bike", url: "/ride", category: "GO" },
@@ -21,4 +25,31 @@ const subLinks = [
 	{ id: "17", name: "Donations", url: "/ride", category: "PAY" },
 ];
 
-export default subLinks;
+export const imageLoad = [
+	{
+		id: 1,
+		img: deliveryMan,
+		category: "ONE",
+	},
+
+	{
+		id: 2,
+		img: image02,
+		category: "TWO",
+	},
+	{
+		id: 3,
+		img: image1,
+		category: "THREE",
+	},
+	{
+		id: 4,
+		img: deliveryMan,
+		category: "FOUR",
+	},
+	{
+		id: 5,
+		img: image1,
+		category: "FIVE",
+	},
+];
