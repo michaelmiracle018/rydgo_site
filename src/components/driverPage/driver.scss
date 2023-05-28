@@ -70,20 +70,26 @@
 	// * ====DRIVER CARD INFO STYLES====
 
 	.driver__card-info-container {
-		width: var(--full-width);
-		max-width: var(--max-width);
-		margin: auto;
+		// width: var(--full-width);
+		// max-width: var(--max-width);
+		max-width: 58%;
+		margin: 100px auto;
 		margin-top: 4rem;
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: 30px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1em;
+
+		@media screen and (max-width: 750px) {
+			grid-template-columns: 1fr;
+			max-width: fit-content;
+		}
+
 
 		.single__card-info {
 			width: 360px;
 			height: 100%;
 			background-color: #fbf4f4;
+			border-radius: 1em;
 			.card__img {
 				margin-top: 2rem;
 				display: flex;
