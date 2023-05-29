@@ -58,7 +58,9 @@ const Navbar = () => {
 								Explore
 							</li>
 							<li>Our Services</li>
-							<li>Riders</li>
+							<Link to="/rider">
+								<li>Riders</li>
+							</Link>
 							<Link to="/driver">
 								<li>Drivers</li>
 							</Link>
