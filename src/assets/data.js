@@ -53,3 +53,37 @@ export const imageLoad = [
 		category: "FIVE",
 	},
 ];
+
+export const questions = [
+	{
+		id: 1,
+		title: "How Do I Get Paid?",
+		info: "By cash payment,credit card and mobile money from riders.",
+	},
+	{
+		id: 2,
+		title: "What Is The Duration In Signing Up?",
+		info: "Submission of your valid information takes less than 15 mins remotely and in-person depending on your zone.",
+		// subInfo: "30 mins in - person training sessions.",
+	},
+	{
+		id: 3,
+		title: "How Do a driver Pay commission to Rydgo?",
+		info: "Rydgo deduct commision through bank account! It's affordable, Requires finished trips payment only.",
+	},
+	{
+		id: 4,
+		title: "Can I Use Rydgo For Just A Few Hours A Week?",
+		info: "Yes, because it's flexible with working hours such as part-time and full time.",
+	},
+	{
+		id: 5,
+		title: "What If I Have No Smartphone?",
+		info: "You can operate with non-smartphones by using a code to connect to your riders or can be put on a smartphone payment method.",
+	},
+	{
+		id: 6,
+		title: "What Happens If I Don't Have A Car?",
+		info: "Our team will offer you competitive rates on vehicles that are accepted on our platform and financed by our partners.",
+	},
+];

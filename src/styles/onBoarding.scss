@@ -1,5 +1,5 @@
 .onBoard__container {
-	widows: 95%;
+	width: 95%;
 	max-width: var(--max-width);
 	margin: auto;
 	h2 {
@@ -46,6 +46,10 @@
 					display: flex;
 					justify-content: space-between;
 				}
+				@media screen and (max-width: 480px) {
+					width: 350px;
+
+				}
 			}
 			.progress__container::before {
 				content: ""; /* Mandatory with ::before */
@@ -56,10 +60,9 @@
 				transform: translate(30px, -50.1%);
 				height: 100%;
 				width: 3px;
-				z-index: -1;
 				@media screen and (max-width: 1024px) {
 					transform: translate(0%, -50.1%);
-					height: 4px;
+					height: 3px;
 					width: 100%;
 				}
 			}
@@ -136,7 +139,10 @@
 			font-family: "Inter-Light";
 			padding-bottom: 1rem;
 			color: #fff;
-            margin-top: 2rem;
+			margin-top: 2rem;
+		}
+		.onBoard__para2 {
+			padding-bottom: 2rem;
 		}
 	}
 }

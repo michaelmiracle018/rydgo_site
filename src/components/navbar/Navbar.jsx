@@ -41,7 +41,7 @@ const Navbar = () => {
 	}, []);
 
 	return (
-		<article ref={headerRef}>
+		<article ref={headerRef} className="navbar">
 			<section className="navbar__container">
 				<div className="navbar__sub-container">
 					{/* LOGO CONTENT

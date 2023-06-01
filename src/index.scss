@@ -7,7 +7,7 @@
 	--red-color-hex: #ff1e00;
 	--red-color-rgb: rgba(255, 30, 0, 255);
 	--light-red: #ff5050;
-
+	--clr-red-special: #b4345c;
 	--black-color: #000;
 	--transition: all 0.3s linear;
 	--clr-white: #fff;
@@ -19,6 +19,9 @@
 	--max-width: 1300px;
 	--light-blue: rgb(218, 237, 238);
 	--full-width: 100%;
+	--clr-grey-special: #eae6eb;
+	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	--transition: all 0.3s linear;
 }
 
 body {
@@ -64,7 +67,7 @@ img {
 	line-height: 17px;
 	color: var(--black-color);
 	padding-right: 5px;
-	font-family: "Montserrat-regular";
+	font-family: "Inter-Light";
 	margin-bottom: 0.7rem;
 	margin-top: 0.9rem;
 }
