@@ -11,14 +11,10 @@ import MaxCarImage from "../../assets/images/max.png";
 import KidsCarImage from "../../assets/images/kids.png";
 import car1 from "../../assets/images/hyundai_PNG11217 1.png";
 import car2 from "../../assets/images/red-hyundai-car-png-15 2.png";
-// import friendsImg from "../../assets/images/young-friends-looking-smartphone-street 1.png";
 import { motion } from "framer-motion";
 import { imageAnimate } from "../../animations";
 import { textAnimate } from "../../animations";
-// import { imageAnimate1 } from "../../../animations";
-// import deliveryMan from "../../../assets/images/delivery-man.png";
-// import image1 from "../../../assets/images/man-wearing-smart.png";
-// import image02 from "../../../assets/images/happy-african-people 1.png";
+
 
 
 
