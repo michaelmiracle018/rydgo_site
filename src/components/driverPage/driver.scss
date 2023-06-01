@@ -7,6 +7,7 @@
 	.hero__container {
 		// padding: 0 1rem;
 		.hero__img {
+			
 			img {
 				width: 100%;
 			}
@@ -83,7 +84,7 @@
 			margin: 4rem 1rem auto;
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			
+
 			max-width: fit-content;
 		}
 
@@ -94,8 +95,6 @@
 			max-width: fit-content;
 			gap: 1em;
 		}
-
-
 
 		.single__card-info {
 			width: 360px;
@@ -142,36 +141,16 @@
 	.driver__steps-container {
 		margin-top: 3rem;
 		width: 100%;
-		height: 700px;
+		height: 1200px;
 		background: linear-gradient(
 			43.28deg,
 			#9a1403 17.81%,
 			rgb(243, 65, 65) 85.69%
 		);
 		clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%, 0% 50%);
-
-		h2 {
-			font-style: normal;
-			font-weight: 900;
-			font-size: 40px;
-			padding-right: 5px;
-			font-family: "Inter-Bold";
-			text-align: center;
-			padding-bottom: 1rem;
-			color: #fff;
-			padding-top: 3rem;
-		}
-
-		.drive__steps-info {
-			display: flex;
-			gap: 40px;
-			.drive__steps-img-wrap {
-				img {
-				}
-			}
-		}
-
-		.drive__steps-btn {
-		}
 	}
+	// * ==== END OF STEPS TO FOLLOW STYLES====
+	// * ====QUESTIONs STYLES====
+
+
 }
