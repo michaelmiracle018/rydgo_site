@@ -2,6 +2,7 @@ import deliveryMan from "../assets/images/delivery-man.png";
 import image1 from "../assets/images/man-wearing-smart.png";
 import image02 from "../assets/images/happy-african-people 1.png";
 
+
 export const subLinks = [
 	{ id: "1", name: "Rides", url: "/ride", category: "GO" },
 	{ id: "2", name: "Taxi", url: "/ride", category: "GO" },
