@@ -7,6 +7,7 @@ import cash from "../../assets/icons/CARD.png";
 import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
 import map from "../../assets/icons/MAP.png";
+import OnBoarding from "./OnBoarding";
 
 const Driver = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
@@ -168,21 +169,14 @@ const Driver = () => {
 				<section className="driver__steps-container">
 					{/* STEPS TO FOLLOW  CONTENT */}
 
-					<div>
-						<h2>Steps to follow</h2>
-						<div className="drive__steps-info">
-							<div className="drive__steps-img-wrap">
-								<img src={time} alt="" style={{ width: "200px" }} />
-							</div>
+					<OnBoarding />
+				</section>
+				{/* QUESTIONS FAQ  CONTENT */}
 
-							<div className="drive__steps-btn">
-								<ul className="driver__steps-tabs">
-									<li>
-										<div className="step__number">1</div>
-									</li>
-								</ul>
-							</div>
-						</div>
+				<section className="questions__container">
+					<div className="questions__wrap">
+					
+					
 					</div>
 				</section>
 			</div>
