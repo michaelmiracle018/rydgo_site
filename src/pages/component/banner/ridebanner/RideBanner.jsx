@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ridebanner.scss";
-import RideBannerImage from '../../../assets/images/Rectangle15.png';
+import RideBannerImage from '../../../../assets/images/Rectangle15.png';
 
 const RideBanner = () => {
 	return (

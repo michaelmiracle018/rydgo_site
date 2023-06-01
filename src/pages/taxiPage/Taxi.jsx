@@ -1,19 +1,17 @@
 import React, {useState} from "react";
-import RideBanner from "../component/banner/ridebanner/RideBanner";
+import TaxiBanner from "../component/banner/taxibanner/TaxiBanner";
 import RideBannerImage from '../../assets/images/Rectangle15.png';
-import '../ridePage/ride.scss';
+import '../taxiPage/taxi.scss';
 import HText from "../../shared/HText";
 import RedButton from "../../shared/RedButton";
 import WhiteButton from "../../shared/WhiteButton";
-import ComfortCareImage from "../../assets/images/comfort.png";
-import ExecutiveCarImage from "../../assets/images/executive.png";
-import MaxCarImage from "../../assets/images/max.png";
-import KidsCarImage from "../../assets/images/kids.png";
+import TaxidriverImage from "../../assets/images/taxDriver.png";
+import TaximaxImage from "../../assets/images/taxiMax.png";
+import TaxikidsImage from "../../assets/images/taxiKids.png";
 import car1 from "../../assets/images/hyundai_PNG11217 1.png";
 import car2 from "../../assets/images/red-hyundai-car-png-15 2.png";
 import { motion } from "framer-motion";
 import { imageAnimate } from "../../animations";
-import { textAnimate } from "../../animations";
 
 
 
@@ -26,7 +24,7 @@ import referral from "../../assets/icons/REFERRAL.png";
 
 
 
-const Ride = () => {
+const Taxi = () => {
 
 	const [isTimeText, setIsTimeText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
@@ -37,87 +35,21 @@ const Ride = () => {
 	return (
 		<>
 
-		<RideBanner />
+		<TaxiBanner />
 
-		<section className="driver__card-info-container">
-					{/* DRIVER CARD CONTENT */}
 
-					<div className="single__card-info">
-						<div className="card__img">
-							<img src={referral} alt="cash" />
-						</div>
-						<div className="card__info-text">
-							<div>
-								<h4>Choose your ride</h4>
-								<p>
-									Select from a wide range of options and get your ride within minutes, or schedule one for later.
-								</p>
-							</div>
-						</div>
-					</div>
+		<div className="flex justify-center items-center my-20 mx-10">
 
-					<div className="single__card-info">
-						<div className="card__img">
-							<img src={time} alt="cash" />
-						</div>
-						<div className="card__info-text">
-							<div>
-								<h4>Track your ride</h4>
-								<p>
-								Track your ride in real time from the moment a Captain is assigned until you arrive at your destination.
-									{isTimeText && (
-										<div>
-											a discount on ride are promptly credited to their wallet
-											tracking the trip. T&C applied.
-										</div>
-									)}
-									<button
-										className="see__more-btn"
-										onClick={() => setIsTimeText(!isTimeText)}
-									>
-										{isTimeText ? "see less" : "see more"}
-									</button>
-								</p>
-							</div>
-						</div>
-					</div>
+                   <h4 className="text-5xl font-bold">Rydgo Taxi</h4>
 
-					<div className="single__card-info">
-						<div className="card__img">
-							<img src={cash} alt="cash" />
-						</div>
-						<div className="card__info-text">
-							<div>
-								<h4>Pay securely</h4>
-								<p>
-								Card, Rydgo Pay, Apple Pay or cash; you can pay securely on Rydgo.
-									...
-									{isReferralText && (
-										<div>
-											from out of money, Rydgo makes sure that drivers who take
-											a discount on ride are promptly credited to their wallet
-											tracking the trip. T&C applied.
-										</div>
-									)}
-									<button
-										className="see__more-btn"
-										onClick={() => setIsReferralText(!isReferralText)}
-									>
-										{isTimeText ? "see less" : "see more"}
-									</button>
-								</p>
-							</div>
-						</div>
-					</div>
-
-				</section>
+                 </div>
 
 
 		<section className="ride__page-container">
 			<div className="ride__page-content">
 				<div className="bg__image"></div>
 				
-				{/* RIDE COMFORT CONTENT*/}
+				{/* RIDE TAXI CONTENT*/}
 
 				<section className="ride_comfort__container">
 					<div className="center__item">
@@ -131,8 +63,8 @@ const Ride = () => {
 							>
 								<div className="ride_comfort__img">
 									<img
-										src={ComfortCareImage}
-										alt="comfortCar"
+										src={TaxidriverImage}
+										alt="taxiDriver"
 										style={{ width: "580px", borderRadius: "25px" }}
 									/>
 								</div>
@@ -148,9 +80,9 @@ const Ride = () => {
 								}}
 							>
 								<div className="ride_comfort__text ">
-									<h4 className="white__text">Comfort</h4>
+									<h4 className="white__text">Taxi</h4>
 									<p className="py-6">
-									Use our Rydgo Premium rides for everyday trips and commutes. We’ll get you where you need to go so you don’t have to.
+									Book a Rydgo taxi, Ghana's most affordable taxi, with a tap. Only available on the Rydgo app.
 									</p>
 									<WhiteButton>Book your ride</WhiteButton>
 								</div>
@@ -171,7 +103,7 @@ const Ride = () => {
 				</section>
 
 				<section className="slide__content-about">
-					{/* EXECUTIVE CONTENT*/}
+					{/* TAXI MAX CONTENT*/}
 
 					<div className="ride__content center__item">
 						<motion.div
@@ -186,9 +118,9 @@ const Ride = () => {
 							className="text__content"
 						>
 							<div>
-								<HText>Executive</HText>
+								<HText>Taxi Max</HText>
 								<p className="py-6">
-								Enjoy the ultimate convenience in a ride, with just a few clicks. Travel in comfort and in style.
+								Taxi Max is both a good quality and a price friendly ride for the whole group. Book a ride for a maximum of six people.
 								</p>
 								<RedButton>Book your ride</RedButton>
 							</div>
@@ -201,13 +133,13 @@ const Ride = () => {
 							variants={imageAnimate}
 						>
 							<div className="img__wrap">
-								<img src={ExecutiveCarImage} alt="executiveCar" />
+								<img src={TaximaxImage} alt="taxiMax" />
 							</div>
 						</motion.div>
 					</div>
 				</section>
 
-				{/* RIDE MAX CONTENT*/}
+				{/* TAXI KIDZ CONTENT*/}
 
 				<section className="ride_max__container">
 					<div className="center__item">
@@ -221,8 +153,8 @@ const Ride = () => {
 							>
 								<div className="ride_max__img">
 									<img
-										src={MaxCarImage}
-										alt="maxCar"
+										src={TaxikidsImage}
+										alt="taxiKids"
 										style={{ width: "580px", borderRadius: "25px" }}
 									/>
 								</div>
@@ -238,9 +170,9 @@ const Ride = () => {
 								}}
 							>
 								<div className="ride_max__text ">
-									<h4 className="white__text">Max</h4>
+									<h4 className="white__text">Taxi kids</h4>
 									<p className="py-6">
-									Are you traveling in a big group? Take our Premium Max rides; we can take up to six people to their next destination.
+									Kids need affordable rides too. Book a car that has a child seat to travel safely with a bundle of joy.
 									</p>
 									<WhiteButton>Book your ride</WhiteButton>
 								</div>
@@ -259,33 +191,6 @@ const Ride = () => {
 						<img src={car2} alt="" />
 					</div>
 				</section>
-
-				{/* Kids CONTENT*/}
-				<motion.div
-					initial={"offscreen"}
-					whileInView={"onscreen"}
-					viewport={{ once: false, amount: 0.5 }}
-					transition={{ staggerChildren: 0.5 }}
-				>
-					<div className="engineer__content center__item">
-						<div className="text__content">
-							<motion.div variants={textAnimate}>
-								<HText>Kids</HText>
-							</motion.div>
-							<motion.div variants={textAnimate}>
-								<p className="py-6">
-								Kids are on the move too. Book a Kids ride that includes a child seat. Our wonderful Captains will also help you with those tricky buckles if you need it.
-								</p>
-								<RedButton>Read more</RedButton>
-							</motion.div>
-						</div>
-						<motion.div variants={imageAnimate}>
-							<div className="img__wrap">
-								<img src={KidsCarImage} alt="kidsCar" />
-							</div>
-						</motion.div>
-					</div>
-				</motion.div>
 
 
 
@@ -407,4 +312,4 @@ const Ride = () => {
 	);
 };
 
-export default Ride;
+export default Taxi;
