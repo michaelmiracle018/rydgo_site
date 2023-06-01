@@ -61,7 +61,6 @@ const RidersPage = () => {
 							alt="/"
 						/>
 						<h2 className="text-2xl font-bold text-center py-8">
-							{" "}
 							Your SAFETY before, during and after the ride is our priority.
 						</h2>
 					</div>
