@@ -1,15 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./navbar.scss";
 import rydgo_logo from "../../assets/images/rydgo_logo(1).png";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { TfiWorld } from "react-icons/tfi";
 import { FaChevronUp, FaChevronDown, FaTimes } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import ServicesNav from "./ServicesNav";
 import Sidebar from "./Sidebar";
-
 import world from "../../assets/svg/world.svg";
-
 import arrowDown from "../../assets/svg/arrow_down.svg";
 import AboutUsNav from "./AboutUsNav";
 
@@ -18,6 +16,9 @@ const Navbar = () => {
 	const [openServiceNav, setOpenServiceNav] = useState(false);
 	const [openAboutUsNav, setOpenAboutUsNav] = useState(false);
 	const headerRef = useRef(null);
+
+	const location = useLocation();
+	const path = location.pathname;
 
 	const serviceNav = () => {
 		setOpenServiceNav(!openServiceNav);
@@ -40,6 +41,13 @@ const Navbar = () => {
 	const closeSidebar = () => {
 		setIsOpen(false);
 	};
+
+	useEffect(() => {
+		if (location.pathname) {
+			setOpenAboutUsNav(false);
+			setOpenServiceNav(false);
+		}
+	}, [path]);
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => {

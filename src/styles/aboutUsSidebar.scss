@@ -24,15 +24,15 @@
 			.links__content {
 				display: flex;
 				justify-content: space-between;
-                align-items: center;
-                margin-top: 20px;
+				align-items: center;
+				margin-top: 20px;
 
 				ul {
 					display: flex;
 					gap: 30px;
 					li {
 						a {
-                            // padding-top: 30px;
+							// padding-top: 30px;
 							font-style: normal;
 							font-weight: 600;
 							font-size: 17px;
@@ -42,6 +42,9 @@
 							font-family: "Montserrat-regular";
 							margin-top: 0.2rem;
 							cursor: pointer;
+							&:hover {
+								color: var(--light-red);
+							}
 						}
 					}
 				}
