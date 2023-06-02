@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import TaxiBanner from "../component/banner/taxibanner/TaxiBanner";
+import SchoolRideBanner from "../component/banner/schoolRidebanner/SchoolRideBanner";
 import RideBannerImage from '../../assets/images/Rectangle15.png';
 import '../taxiPage/taxi.scss';
 import HText from "../../shared/HText";
@@ -24,7 +24,7 @@ import referral from "../../assets/icons/REFERRAL.png";
 
 
 
-const Taxi = () => {
+const SchoolRide = () => {
 
 	const [isTimeText, setIsTimeText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
@@ -35,17 +35,92 @@ const Taxi = () => {
 	return (
 		<>
 
-		<TaxiBanner />
+		<SchoolRideBanner />
 
 
 		<div className="flex flex-col justify-center items-center my-20 mx-10">
 
-            <h4 className="text-5xl font-bold">Rydgo Taxi</h4>
-			<small className="text-xl mt-2 text-[#ff0000]">
-				Ghana's most affordable ride.
+            <h4 className="text-5xl font-bold">School Rides</h4>
+			<small className="text-xl mt-2 text-[#ff0000] text-cen">
+			With just a tap, you can purchase a School Rides package that’s <br/> exclusively customised to meet yours and your child’s needs. 
 			</small>
 
             </div>
+
+
+			<section className="exploreMore__card-info-container">
+					{/* SCHOOLRIDE PACKAGES WITH RYDGO CARD */}
+
+					<div className="single__card-info drop-shadow-md">
+
+						<div className="card__img">
+							<img src={referral} alt="cash" />
+						</div>
+						<div className="card__info-text">
+							<div>
+								<h4>Book packages</h4>
+								<p>
+								40 school rides, starting at just Gh5.00.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="single__card-info drop-shadow-md">
+						<div className="card__img">
+							<img src={time} alt="cash" />
+						</div>
+						<div className="card__info-text">
+							<div>
+								<h4>Save up to 40%</h4>
+								<p>
+								Extra savings with no peak charges and regulator fees on package rides
+									{isTimeText && (
+										<div>
+											a discount on ride are promptly credited to their wallet
+											tracking the trip. T&C applied.
+										</div>
+									)}
+									<button
+										className="see__more-btn"
+										onClick={() => setIsTimeText(!isTimeText)}
+									>
+										{isTimeText ? "see less" : "see more"}
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="single__card-info drop-shadow-md">
+						<div className="card__img">
+							<img src={cash} alt="cash" />
+						</div>
+						<div className="card__info-text">
+							<div>
+								<h4>Your kids are in the safest hands</h4>
+								<p>
+								Real-time tracking and notifications to keep you updated on your child’s journey.
+									...
+									{isReferralText && (
+										<div>
+											from out of money, Rydgo makes sure that drivers who take
+											a discount on ride are promptly credited to their wallet
+											tracking the trip. T&C applied.
+										</div>
+									)}
+									<button
+										className="see__more-btn"
+										onClick={() => setIsReferralText(!isReferralText)}
+									>
+										{isTimeText ? "see less" : "see more"}
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</section>
 
 
 		<section className="ride__page-container">
@@ -83,9 +158,9 @@ const Taxi = () => {
 								}}
 							>
 								<div className="ride_comfort__text ">
-									<h4 className="white__text">Taxi</h4>
+									<h4 className="white__text">Let us take care of it</h4>
 									<p className="py-6">
-									Book a Rydgo taxi, Ghana's most affordable taxi, with a tap. Only available on the Rydgo app.
+									Our newest feature, School Rides, will help you say goodbye to running after your kids in the morning or struggling to arrange pickups and drop-offs.
 									</p>
 									<WhiteButton>Book your ride</WhiteButton>
 								</div>
@@ -121,9 +196,9 @@ const Taxi = () => {
 							className="text__content"
 						>
 							<div>
-								<HText>Taxi Max</HText>
+								<HText>Customised for your child's needs</HText>
 								<p className="py-6">
-								Taxi Max is both a good quality and a price friendly ride for the whole group. Book a ride for a maximum of six people.
+								Your child gets premium rides in our Comfort car type with top-rated Captains who prioritise your child’s safety.
 								</p>
 								<RedButton>Book your ride</RedButton>
 							</div>
@@ -315,4 +390,4 @@ const Taxi = () => {
 	);
 };
 
-export default Taxi;
+export default SchoolRide;

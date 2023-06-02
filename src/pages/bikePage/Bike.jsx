@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import TaxiBanner from "../component/banner/taxibanner/TaxiBanner";
+import BikeBanner from "../component/banner/bikebanner/BikeBanner";
 import RideBannerImage from '../../assets/images/Rectangle15.png';
-import '../taxiPage/taxi.scss';
+import '../bikePage/bike.scss';
 import HText from "../../shared/HText";
 import RedButton from "../../shared/RedButton";
 import WhiteButton from "../../shared/WhiteButton";
@@ -24,7 +24,7 @@ import referral from "../../assets/icons/REFERRAL.png";
 
 
 
-const Taxi = () => {
+const Bike = () => {
 
 	const [isTimeText, setIsTimeText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
@@ -35,24 +35,100 @@ const Taxi = () => {
 	return (
 		<>
 
-		<TaxiBanner />
+		<BikeBanner />
 
 
 		<div className="flex flex-col justify-center items-center my-20 mx-10">
 
-            <h4 className="text-5xl font-bold">Rydgo Taxi</h4>
+            <h4 className="text-5xl font-bold">Bike</h4>
 			<small className="text-xl mt-2 text-[#ff0000]">
-				Ghana's most affordable ride.
+			Bike your way, every day.
 			</small>
 
             </div>
 
 
-		<section className="ride__page-container">
-			<div className="ride__page-content">
+			<section className="exploreMore__card-info-container">
+					{/* EXPLORE MORE WITH RYDGO CARD */}
+
+					<div className="single__card-info drop-shadow-md">
+
+						<div className="card__img">
+							<img src={referral} alt="cash" />
+						</div>
+						<div className="card__info-text">
+							<div>
+								<h4>Join</h4>
+								<p>
+								Become an annual member or get a short-term pass through the Rydgo app.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="single__card-info drop-shadow-md">
+						<div className="card__img">
+							<img src={time} alt="cash" />
+						</div>
+						<div className="card__info-text">
+							<div>
+								<h4>Unlock and ride</h4>
+								<p>
+								Download the Rydgo app, select Bike, and find a station. Unlock the bike by scanning the QR code, and you’re set!
+									{isTimeText && (
+										<div>
+											a discount on ride are promptly credited to their wallet
+											tracking the trip. T&C applied.
+										</div>
+									)}
+									<button
+										className="see__more-btn"
+										onClick={() => setIsTimeText(!isTimeText)}
+									>
+										{isTimeText ? "see less" : "see more"}
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="single__card-info drop-shadow-md">
+						<div className="card__img">
+							<img src={cash} alt="cash" />
+						</div>
+						<div className="card__info-text">
+							<div>
+								<h4>Return</h4>
+								<p>
+								Dock your bike at any Rydgo BIKE station; wait for the green light and buzzer sound to make sure it’s locked.
+									...
+									{isReferralText && (
+										<div>
+											from out of money, Rydgo makes sure that drivers who take
+											a discount on ride are promptly credited to their wallet
+											tracking the trip. T&C applied.
+										</div>
+									)}
+									<button
+										className="see__more-btn"
+										onClick={() => setIsReferralText(!isReferralText)}
+									>
+										{isTimeText ? "see less" : "see more"}
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+
+
+		<section className="bike__page-container">
+			<div className="bike__page-content">
 				<div className="bg__image"></div>
 				
-				{/* RIDE TAXI CONTENT*/}
+				{/* RIDE BIKE CONTENT*/}
 
 				<section className="ride_comfort__container">
 					<div className="center__item">
@@ -83,11 +159,11 @@ const Taxi = () => {
 								}}
 							>
 								<div className="ride_comfort__text ">
-									<h4 className="white__text">Taxi</h4>
+									<h4 className="white__text">It's fast</h4>
 									<p className="py-6">
-									Book a Rydgo taxi, Ghana's most affordable taxi, with a tap. Only available on the Rydgo app.
+									Careem BIKE is perfect for quick trips. A few taps, and you’re off!
 									</p>
-									<WhiteButton>Book your ride</WhiteButton>
+									<WhiteButton>Ride now</WhiteButton>
 								</div>
 							</motion.div>
 						</div>
@@ -106,7 +182,7 @@ const Taxi = () => {
 				</section>
 
 				<section className="slide__content-about">
-					{/* TAXI MAX CONTENT*/}
+					{/* BIKE AFFORDABLE CONTENT*/}
 
 					<div className="ride__content center__item">
 						<motion.div
@@ -121,11 +197,11 @@ const Taxi = () => {
 							className="text__content"
 						>
 							<div>
-								<HText>Taxi Max</HText>
+								<HText>It's affordable</HText>
 								<p className="py-6">
-								Taxi Max is both a good quality and a price friendly ride for the whole group. Book a ride for a maximum of six people.
+								Choose from annual, monthly, weekly and daily memberships.
 								</p>
-								<RedButton>Book your ride</RedButton>
+								<RedButton>Ride now</RedButton>
 							</div>
 						</motion.div>
 						<motion.div
@@ -142,7 +218,7 @@ const Taxi = () => {
 					</div>
 				</section>
 
-				{/* TAXI KIDZ CONTENT*/}
+				{/* BIKE CONTENT*/}
 
 				<section className="ride_max__container">
 					<div className="center__item">
@@ -173,9 +249,9 @@ const Taxi = () => {
 								}}
 							>
 								<div className="ride_max__text ">
-									<h4 className="white__text">Taxi kids</h4>
+									<h4 className="white__text">It's easy</h4>
 									<p className="py-6">
-									Kids need affordable rides too. Book a car that has a child seat to travel safely with a bundle of joy.
+									Finding a station, renting a bike and paying is super simple.
 									</p>
 									<WhiteButton>Book your ride</WhiteButton>
 								</div>
@@ -196,10 +272,48 @@ const Taxi = () => {
 				</section>
 
 
+				<section className="slide__content-about">
+					{/* BIKE AFFORDABLE CONTENT*/}
+
+					<div className="ride__content center__item">
+						<motion.div
+							initial="hidden"
+							whileInView="visible"
+							viewport={{ once: true, amount: 0.5 }}
+							transition={{ delay: 0.2, duration: 0.9 }}
+							variants={{
+								hidden: { opacity: 0, x: -50 },
+								visible: { opacity: 1, x: 0 },
+							}}
+							className="text__content"
+						>
+							<div>
+								<HText>It's green</HText>
+								<p className="py-6">
+								Rydgo BIKE is the most sustainable way to get where you’re going while getting exercise and having fun!
+								</p>
+								<RedButton>Ride now</RedButton>
+							</div>
+						</motion.div>
+						<motion.div
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							viewport={{ once: false, amount: 0.5 }}
+							transition={{ staggerChildren: 0.5 }}
+							variants={imageAnimate}
+						>
+							<div className="img__wrap">
+								<img src={TaximaxImage} alt="taxiMax" />
+							</div>
+						</motion.div>
+					</div>
+				</section>
+
+
 
 				{/* EXPLORE MORE WITH RYDGO CONTENT */}
                  
-				<div className="flex justify-center items-center mx-10">
+				<div className="flex justify-center items-center mx-10 mt-32">
 
                    <h4 className="text-5xl font-bold">Explore more with Rydgo</h4>
 
@@ -315,4 +429,4 @@ const Taxi = () => {
 	);
 };
 
-export default Taxi;
+export default Bike;

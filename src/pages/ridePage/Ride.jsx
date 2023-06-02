@@ -39,6 +39,16 @@ const Ride = () => {
 
 		<RideBanner />
 
+		<div className="flex flex-col justify-center items-center my-20 mx-10">
+
+            <h4 className="text-5xl font-bold">Rides</h4>
+			<small className="text-xl mt-2 text-[#ff0000]">
+			Order a ride with Rydgo, and go further, faster.
+			</small>
+
+            </div>
+
+
 		<section className="driver__card-info-container">
 					{/* DRIVER CARD CONTENT */}
 

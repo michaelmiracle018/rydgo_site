@@ -6,9 +6,9 @@ import image02 from "../assets/images/happy-african-people 1.png";
 export const subLinks = [
 	{ id: "1", name: "Rides", url: "/ride", category: "GO" },
 	{ id: "2", name: "Taxi", url: "/taxi", category: "GO" },
-	{ id: "3", name: "Bike", url: "/ride", category: "GO" },
-	{ id: "4", name: "Car Rental", url: "/ride", category: "GO" },
-	{ id: "5", name: "School Ride", url: "/ride", category: "GO" },
+	{ id: "3", name: "Bike", url: "/bike", category: "GO" },
+	{ id: "4", name: "Car Rental", url: "/rental", category: "GO" },
+	{ id: "5", name: "School Ride", url: "/schoolride", category: "GO" },
 
 	{ id: "6", name: "Food", url: "/ride", category: "EAT" },
 	{ id: "7", name: "DineOut", url: "/ride", category: "EAT" },
