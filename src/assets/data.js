@@ -1,6 +1,12 @@
 import deliveryMan from "../assets/images/delivery-man.png";
 import image1 from "../assets/images/man-wearing-smart.png";
 import image02 from "../assets/images/happy-african-people 1.png";
+import cash from "../assets/icons/ICONs-31.png";
+import image03 from "../assets/icons/ICONs-26.png";
+import pay from "../assets/icons/ICONs-01.png";
+import image04 from "../assets/icons/ICONs-32.png";
+import phone from "../assets/icons/ICONs-11.png";
+import car from "../assets/icons/ICONs-20.png";
 
 
 export const subLinks = [
@@ -60,31 +66,36 @@ export const questions = [
 		id: 1,
 		title: "How Do I Get Paid?",
 		info: "By cash payment,credit card and mobile money from riders.",
+		img: cash,
 	},
 	{
 		id: 2,
 		title: "What Is The Duration In Signing Up?",
 		info: "Submission of your valid information takes less than 15 mins remotely and in-person depending on your zone.",
-		// subInfo: "30 mins in - person training sessions.",
+		img: image03
 	},
 	{
 		id: 3,
 		title: "How Do a driver Pay commission to Rydgo?",
 		info: "Rydgo deduct commision through bank account! It's affordable, Requires finished trips payment only.",
+		img: pay
 	},
 	{
 		id: 4,
 		title: "Can I Use Rydgo For Just A Few Hours A Week?",
 		info: "Yes, because it's flexible with working hours such as part-time and full time.",
+		img: image04
 	},
 	{
 		id: 5,
 		title: "What If I Have No Smartphone?",
 		info: "You can operate with non-smartphones by using a code to connect to your riders or can be put on a smartphone payment method.",
+		img: phone
 	},
 	{
 		id: 6,
 		title: "What Happens If I Don't Have A Car?",
 		info: "Our team will offer you competitive rates on vehicles that are accepted on our platform and financed by our partners.",
+		img: car
 	},
 ];

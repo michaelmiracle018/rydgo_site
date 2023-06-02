@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-
-import "../../styles/quesstions.scss";
-
-
-
-
+import "../styles/quesstions.scss";
 const Question = ({ title, info, subInfo }) => {
 	const [showInfo, setShowInfo] = useState(false);
 	return (
