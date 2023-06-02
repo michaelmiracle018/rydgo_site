@@ -55,9 +55,8 @@ const Navbar = () => {
 					<div className="links__content">
 						<ul>
 							<li onClick={() => setOpenServiceNav(!openServiceNav)}>
-								Explore
+								Our Services
 							</li>
-							<li>Our Services</li>
 							<Link to="/rider">
 								<li>Riders</li>
 							</Link>

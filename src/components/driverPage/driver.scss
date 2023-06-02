@@ -149,43 +149,5 @@
 		// clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
 	}
 	// * ==== END OF STEPS TO FOLLOW STYLES====
-	// * ====QUESTIONs STYLES====
-	.question__img {
-		position: relative;
-		width: 95%;
-		max-width: 1100px;
-		margin: 3rem auto;
-		img {
-			border-radius: 30px;
-			z-index: -1;
-			width: 100%;
-			height: 100%;
-		}
-		.question__title {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			padding-top: 2rem;
-
-			h3 {
-				font-family: "Inter-Light";
-				font-style: normal;
-				font-weight: 700;
-				font-size: clamp(2rem, 2.5vw, 6rem); 
-				line-height: 130.62%;
-				color: #fff;
-			}
-		}
-
-		.questions__container {
-			z-index: 3;
-
-			.questions__info {
-				border-radius: var(--radius);
-				padding: 2.5rem 2rem;
-			}
-		}
-	}
-
-	// * ====END OF QUESTIONs STYLES====
+	
 }

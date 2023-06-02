@@ -8,9 +8,9 @@ import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
 import map from "../../assets/icons/MAP.png";
 import OnBoarding from "./OnBoarding";
-import Question from "./Questions";
-import { questions } from "../../assets/data";
-import RideBannerImage from "../../assets/images/Rectangle15.png";
+import Question from "../Questions";
+
+import QuestionPage from "../QuestionPage";
 
 const Driver = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
@@ -176,19 +176,7 @@ const Driver = () => {
 				</section>
 
 				{/* QUESTIONS FAQ  CONTENT */}
-				<div className="question__img">
-					<img src={RideBannerImage} alt="rideImage" className="absolute" />
-					<section className="questions__container">
-						<div className="question__title">
-							<h3>TOP QUESTIONS</h3>
-						</div>
-						<section className="questions__info">
-							{questions.map((question) => {
-								return <Question key={question.id} {...question} />;
-							})}
-						</section>
-					</section>
-				</div>
+				<QuestionPage />
 			</div>
 		</section>
 	);
