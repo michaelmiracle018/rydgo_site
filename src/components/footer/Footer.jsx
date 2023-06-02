@@ -2,7 +2,6 @@ import React from "react";
 import rydgo_logo from "../../assets/images/rydgo_logo(1).png";
 import apple_img from "../../assets/images/app-store.webp";
 import google_play from "../../assets/images/google-play.webp";
-import android_app from "../../assets/images/apk-download.webp";
 import "./footer.scss";
 import { CiLocationOn } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa";
@@ -22,7 +21,6 @@ const Footer = () => {
 					<img src={rydgo_logo} alt="rydgo_logo" />
 					<img src={apple_img} alt="rydgo_log" />
 					<img src={google_play} alt="rydgo_log" />
-					<img src={android_app} alt="rydgo_log" />
 				</div>
 				{/* MIDDLE FOOTER CONTENT 
 			
@@ -75,7 +73,7 @@ const Footer = () => {
 						<span className="left__icon">
 							<CiLocationOn />
 						</span>
-						<span>U.A.E</span>
+						<span>Ghana</span>
 						<span className="right__icon">
 							<FaChevronDown />
 						</span>

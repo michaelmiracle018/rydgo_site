@@ -5,6 +5,13 @@ import Driver from "../components/driverPage/Driver";
 import RidersPage from "../components/ridersPage/RidersPage";
 import Ride from '../pages/ridePage/Ride';
 import Taxi from "../pages/taxiPage/Taxi";
+import Bike from "../pages/bikePage/Bike";
+import CarRental from "../pages/carRentalPage/CarRental";
+import SchoolRIde from "../pages/schoolRidePage/SchoolRide";
+
+
+
+
 
 const RoutesPage = () => {
 	return (
@@ -16,6 +23,9 @@ const RoutesPage = () => {
 					<Route path="/rider" element={<RidersPage />}></Route>
 					<Route path="/ride" element={<Ride />}></Route>
 					<Route path="/taxi" element={<Taxi />}></Route>
+					<Route path="/bike" element={<Bike />}></Route>
+					<Route path="/rental" element={<CarRental />}></Route>
+					<Route path="/schoolride" element={<SchoolRIde />}></Route>
 				</Route>
 			</Routes>
 		</div>

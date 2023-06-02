@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TaxiBanner from "../component/banner/taxibanner/TaxiBanner";
-import RideBannerImage from "../../assets/images/Rectangle15.png";
+//import RideBannerImage from "../../assets/images/Rectangle15.png";
 import "../taxiPage/taxi.scss";
 import HText from "../../shared/HText";
 import RedButton from "../../shared/RedButton";
