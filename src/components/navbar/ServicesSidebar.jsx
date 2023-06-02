@@ -7,24 +7,8 @@ const ServicesSidebar = () => {
 	const [category, setCategory] = useState("GO");
 	const [allSubLinks, setAllSubLinks] = useState(subLinks);
 	useEffect(() => {
-		if (category === "GO") {
-			const filteredLinks = subLinks.filter((item) => item.category === "GO");
-			setAllSubLinks(filteredLinks);
-		}
-
-		if (category === "EAT") {
-			const filteredLinks = subLinks.filter((item) => item.category === "EAT");
-			setAllSubLinks(filteredLinks);
-		}
-
-		if (category === "GET") {
-			const filteredLinks = subLinks.filter((item) => item.category === "GET");
-			setAllSubLinks(filteredLinks);
-		}
-		if (category === "PAY") {
-			const filteredLinks = subLinks.filter((item) => item.category === "PAY");
-			setAllSubLinks(filteredLinks);
-		}
+	const filteredLinks = subLinks.filter((item) => item.category === category);
+	setAllSubLinks(filteredLinks);
 	}, [category]);
 
 	return (

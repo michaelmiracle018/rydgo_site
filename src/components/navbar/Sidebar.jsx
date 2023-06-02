@@ -21,12 +21,18 @@ const Sidebar = ({ setIsOpen, isOpen }) => {
 								className="link__flex"
 								onClick={() => setIsOpenServices(!isOpenServices)}
 							>
-								<span>Services</span>
+								<span>Our Services</span>
 								<div>
 									{isOpenServices ? <FaChevronUp /> : <FaChevronDown />}{" "}
 								</div>
 							</div>
 							{isOpenServices && <ServicesSidebar />}
+						</li>
+						<li>
+							<Link to="/rider" className="link__flex">Riders</Link>
+						</li>
+						<li>
+							<Link to="/driver" className="link__flex">Drivers</Link>
 						</li>
 						<li>
 							<div

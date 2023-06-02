@@ -1,7 +1,7 @@
 .section__nav-container {
 	display: none;
 	position: relative;
-	z-index: 3;
+	z-index: 5;
 	@media screen and (min-width: 1269px) {
 		& {
 			display: block;
@@ -10,11 +10,11 @@
 	.servicesNav__content {
 		width: 100%;
 		height: 220px;
-		background-color: var(--light-blue);
+		background-color: #eaedf1;
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 		position: absolute;
-		top: -62px;
+		top: -10px;
 
 		.servicesNav__wrap {
 			padding-top: 20px;
@@ -25,7 +25,6 @@
 				display: flex;
 
 				justify-content: space-between;
-				// align-items: center;
 
 				ul {
 					display: block;
@@ -66,7 +65,7 @@
 				.sub__links-content {
 					margin-top: 1rem;
 					a {
-						background-color: rgb(228, 167, 167);
+						background-color: #fc4932;
 						padding: 15px;
 						width: 100%;
 						margin: 10px;
@@ -75,7 +74,7 @@
 						font-weight: 600;
 						font-size: 17px;
 						line-height: 17px;
-						color: var(--black-color);
+						color: var(--clr-white);
 						font-family: "Montserrat-regular";
 					}
 				}
@@ -104,11 +103,11 @@
 		width: 100%;
 		height: 100%;
 		background: rgba(0, 0, 0, 0.5);
-		top: 100px;
+		top: 110px;
 		bottom: 0;
 		left: 0;
 		right: 0;
-		// display: none;
+
 		z-index: -1;
 	}
 }

@@ -11,11 +11,27 @@ import Sidebar from "./Sidebar";
 import world from "../../assets/svg/world.svg";
 
 import arrowDown from "../../assets/svg/arrow_down.svg";
+import AboutUsNav from "./AboutUsNav";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [openServiceNav, setOpenServiceNav] = useState(false);
+	const [openAboutUsNav, setOpenAboutUsNav] = useState(false);
 	const headerRef = useRef(null);
+
+	const serviceNav = () => {
+		setOpenServiceNav(!openServiceNav);
+		if (openAboutUsNav === true) {
+			setOpenAboutUsNav(!openAboutUsNav);
+		}
+	};
+
+	const aboutUsNav = () => {
+		setOpenAboutUsNav(!openAboutUsNav);
+		if (openServiceNav === true) {
+			setOpenServiceNav(!openServiceNav);
+		}
+	};
 
 	const openSidebar = () => {
 		setIsOpen(true);
@@ -54,9 +70,7 @@ const Navbar = () => {
 
 					<div className="links__content">
 						<ul>
-							<li onClick={() => setOpenServiceNav(!openServiceNav)}>
-								Our Services
-							</li>
+							<li onClick={serviceNav}>Our Services</li>
 							<Link to="/rider">
 								<li>Riders</li>
 							</Link>
@@ -64,7 +78,7 @@ const Navbar = () => {
 								<li>Drivers</li>
 							</Link>
 
-							<li>About Us</li>
+							<li onClick={aboutUsNav}>About Us</li>
 							<li>Contact us</li>
 						</ul>
 					</div>
@@ -102,6 +116,9 @@ const Navbar = () => {
 					setOpenServiceNav={setOpenServiceNav}
 				/>
 			)}
+			<div>
+				{openAboutUsNav && <AboutUsNav setOpenAboutUsNav={setOpenAboutUsNav} />}
+			</div>
 		</article>
 	);
 };

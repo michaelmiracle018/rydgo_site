@@ -1,0 +1,79 @@
+.aboutUs__nav-container {
+	display: none;
+	position: relative;
+	z-index: 5;
+	@media screen and (min-width: 1269px) {
+		& {
+			display: block;
+		}
+	}
+	.aboutUs__content {
+		width: 100%;
+		height: 150px;
+		background-color: #eaedf1;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		position: absolute;
+		top: -10px;
+
+		.aboutUs__wrap {
+			padding-top: 20px;
+			width: var(--width);
+			max-width: 1400px;
+			margin: auto;
+			.links__content {
+				display: flex;
+				justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+
+				ul {
+					display: flex;
+					gap: 30px;
+					li {
+						a {
+                            // padding-top: 30px;
+							font-style: normal;
+							font-weight: 600;
+							font-size: 17px;
+							line-height: 17px;
+							color: var(--black-color);
+							padding-right: 5px;
+							font-family: "Montserrat-regular";
+							margin-top: 0.2rem;
+							cursor: pointer;
+						}
+					}
+				}
+				.close__btn {
+					.icon__btn {
+						font-size: 20px;
+						border-radius: 50%;
+						background-color: var(--clr-white);
+						width: 25px;
+						height: 25px;
+						cursor: pointer;
+						padding: 3px;
+						&:hover {
+							background: rgba(0, 0, 0, 0.2);
+							color: var(--clr-white);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.service__overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	top: 110px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	z-index: -1;
+}
