@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaTimes } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import ServicesSidebar from "./ServicesSidebar";
 import "../../styles/sidebar.scss";

@@ -24,6 +24,7 @@ import GoWrap from "../../components/Go/GoWrap";
 const Ride = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
+	const [selectedPage, setSelectedPage] = useState('Home');
 
 	return (
 		<>

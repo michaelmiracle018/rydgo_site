@@ -21,6 +21,7 @@
 	display: flex;
 	justify-content: center;
 	gap: 20px;
+    flex-wrap: wrap;
 
 	.filter__btn {
 		background: transparent;
@@ -58,12 +59,14 @@
 		text-align: center;
 		padding-bottom: 1rem;
 		color: #000;
-		// text-align: center;
+		width: 100%;
 	}
 
 	.item__img-content {
 		display: flex;
 		gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
 		padding-top: 1.5rem;
 		.img__flex {
 			border-radius: 10px;

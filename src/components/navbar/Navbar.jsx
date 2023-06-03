@@ -46,6 +46,7 @@ const Navbar = () => {
 		if (location.pathname) {
 			setOpenAboutUsNav(false);
 			setOpenServiceNav(false);
+			setIsOpen(false);
 		}
 	}, [path]);
 

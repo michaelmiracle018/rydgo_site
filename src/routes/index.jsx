@@ -9,10 +9,6 @@ import Bike from "../pages/bikePage/Bike";
 import CarRental from "../pages/carRentalPage/CarRental";
 import SchoolRIde from "../pages/schoolRidePage/SchoolRide";
 
-
-
-
-
 const RoutesPage = () => {
 	return (
 		<div>

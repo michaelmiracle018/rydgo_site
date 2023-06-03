@@ -116,22 +116,22 @@ export const go_content = [
 
 		images: [
 			{
-				id: 14,
+				id: 'i11',
 				img: kids,
 				textImg: "Kids",
 			},
 			{
-				id: 15,
+				id: 'i12',
 				img: executiveCar,
 				textImg: "Executive",
 			},
 			{
-				id: 16,
+				id: 'i13',
 				img: maxVan,
 				textImg: "Max",
 			},
 			{
-				id: 17,
+				id: 'i14',
 				img: sedan,
 				textImg: "Comfort",
 			},
@@ -145,17 +145,17 @@ export const go_content = [
 
 		images: [
 			{
-				id: 10,
+				id: 'i15',
 				img: halaKids,
 				textImg: "Hala",
 			},
 			{
-				id: 11,
+				id: 'i16',
 				img: vanTaxi,
 				textImg: "Hala Max",
 			},
 			{
-				id: 13,
+				id: 'i17',
 				img: taxiCar,
 				textImg: "Hala Kids",
 			},

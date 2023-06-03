@@ -3,7 +3,7 @@ import "./goStyles.scss";
 import { go_content } from "../../assets/data";
 import GoContent from "./GoContent";
 import "./goStyles.scss";
-import { useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const GoWrap = () => {
 	const [goItems, setGoItems] = useState(go_content);
@@ -33,46 +33,46 @@ const GoWrap = () => {
 				</div>
 				<div className="">
 					<div className="go__btn-container">
-						<button
+						<NavLink to='/ride'
 							className={` filter__btn ${
 								category === "ride" ? "active__btn" : ""
 							}`}
 							onClick={() => setCategory("ride")}
 						>
 							Rides
-						</button>
-						<button
+						</NavLink>
+						<NavLink to='/taxi'
 							className={` filter__btn ${
 								category === "taxi" ? "active__btn" : ""
 							}`}
 							onClick={() => setCategory("taxi")}
 						>
 							Taxi
-						</button>
-						<button
+						</NavLink>
+						<NavLink to='/bike'
 							className={` filter__btn ${
 								category === "bike" ? "active__btn" : ""
 							}`}
 							onClick={() => setCategory("bike")}
 						>
 							Bike
-						</button>
-						<button
+						</NavLink>
+						<NavLink to='/rental'
 							className={` filter__btn ${
 								category === "rental" ? "active__btn" : ""
 							}`}
 							onClick={() => setCategory("rental")}
 						>
 							Car Rental
-						</button>
-						<button
+						</NavLink>
+						<NavLink to='/schoolRide'
 							className={` filter__btn ${
 								category === "schoolRide" ? "active__btn" : ""
 							}`}
 							onClick={() => setCategory("schoolRide")}
 						>
 							School Ride
-						</button>
+						</NavLink>
 					</div>
 				</div>
 				<GoContent items={goItems} />

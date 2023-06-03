@@ -8,13 +8,11 @@ import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
 import map from "../../assets/icons/MAP.png";
 import OnBoarding from "./OnBoarding";
-import Question from "../Questions";
 
 import QuestionPage from "../QuestionPage";
 
 const Driver = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
-	const [isCashText, setIsCashText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
 	const [isMapText, setIsMapText] = useState(false);
 
@@ -133,7 +131,7 @@ const Driver = () => {
 										className="see__more-btn"
 										onClick={() => setIsReferralText(!isReferralText)}
 									>
-										{isTimeText ? "see less" : "see more"}
+										{isReferralText ? "see less" : "see more"}
 									</button>
 								</p>
 							</div>
