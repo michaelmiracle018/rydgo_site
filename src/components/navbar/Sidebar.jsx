@@ -61,7 +61,7 @@ const Sidebar = ({ setIsOpen, isOpen }) => {
 							)}
 						</li>
 						<li>
-							<div className="link__flex">Careem Plus</div>
+							<div className="link__flex">Rydgo Plus</div>
 						</li>
 						<li>
 							<div

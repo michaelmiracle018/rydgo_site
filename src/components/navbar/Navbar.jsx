@@ -85,9 +85,14 @@ const Navbar = () => {
 							<Link to="/driver">
 								<li>Drivers</li>
 							</Link>
+							<Link to="/">
+								<li>Partners</li>
+							</Link>
+							<Link to="/">
+								<li>Rydgo plus</li>
+							</Link>
 
 							<li onClick={aboutUsNav}>About Us</li>
-							<li>Contact us</li>
 						</ul>
 					</div>
 

@@ -17,6 +17,7 @@ import cash from "../../assets/icons/CARD.png";
 import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
 import QuestionPage from "../../components/QuestionPage";
+import GoWrap from "../../components/Go/GoWrap";
 
 const Taxi = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
@@ -26,13 +27,20 @@ const Taxi = () => {
 		<>
 			<TaxiBanner />
 
+			{/* 
+		
 			<div className="flex justify-center items-center my-20 mx-10">
-				<h4 className="text-5xl font-bold">Rydgo Taxi</h4>
+			<h4 className="text-5xl font-bold">Rydgo Taxi</h4>
 			</div>
+		*/}
 
 			<section className="ride__page-container">
 				<div className="ride__page-content">
 					<div className="bg__image"></div>
+					{/* GO CONTENT  */}
+					<div>
+						<GoWrap />
+					</div>
 
 					{/* RIDE TAXI CONTENT*/}
 

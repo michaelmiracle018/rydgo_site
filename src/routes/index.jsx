@@ -25,7 +25,7 @@ const RoutesPage = () => {
 					<Route path="/taxi" element={<Taxi />}></Route>
 					<Route path="/bike" element={<Bike />}></Route>
 					<Route path="/rental" element={<CarRental />}></Route>
-					<Route path="/schoolride" element={<SchoolRIde />}></Route>
+					<Route path="/schoolRide" element={<SchoolRIde />}></Route>
 				</Route>
 			</Routes>
 		</div>

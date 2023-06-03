@@ -19,6 +19,7 @@ import cash from "../../assets/icons/CARD.png";
 import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
 import QuestionPage from "../../components/QuestionPage";
+import GoWrap from "../../components/Go/GoWrap";
 
 const Ride = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
@@ -27,7 +28,10 @@ const Ride = () => {
 	return (
 		<>
 			<RideBanner />
-
+			{/* GO CONTENT  */}
+			<div>
+				<GoWrap />
+			</div>
 			<section className="driver__card-info-container">
 				{/* DRIVER CARD CONTENT */}
 
@@ -35,6 +39,7 @@ const Ride = () => {
 					<div className="card__img">
 						<img src={referral} alt="cash" />
 					</div>
+
 					<div className="card__info-text">
 						<div>
 							<h4>Choose your ride</h4>
