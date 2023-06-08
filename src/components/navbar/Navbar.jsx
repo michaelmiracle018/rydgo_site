@@ -10,11 +10,14 @@ import Sidebar from "./Sidebar";
 import world from "../../assets/svg/world.svg";
 import arrowDown from "../../assets/svg/arrow_down.svg";
 import AboutUsNav from "./AboutUsNav";
+import PartnerNav from "./PartnerNav";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [openServiceNav, setOpenServiceNav] = useState(false);
 	const [openAboutUsNav, setOpenAboutUsNav] = useState(false);
+	const [openPartnerNav, setOpenPartnerNav] = useState(false);
+
 	const headerRef = useRef(null);
 
 	const location = useLocation();
@@ -24,6 +27,8 @@ const Navbar = () => {
 		setOpenServiceNav(!openServiceNav);
 		if (openAboutUsNav === true) {
 			setOpenAboutUsNav(!openAboutUsNav);
+		} else if (openPartnerNav === true) {
+			setOpenPartnerNav(!openPartnerNav);
 		}
 	};
 
@@ -31,6 +36,17 @@ const Navbar = () => {
 		setOpenAboutUsNav(!openAboutUsNav);
 		if (openServiceNav === true) {
 			setOpenServiceNav(!openServiceNav);
+		} else if (openPartnerNav === true) {
+			setOpenPartnerNav(!openPartnerNav);
+		}
+	};
+
+	const partnerNav = () => {
+		setOpenPartnerNav(!openPartnerNav);
+		if (openServiceNav === true) {
+			setOpenServiceNav(!openServiceNav);
+		} else if (openAboutUsNav === true) {
+			setOpenAboutUsNav(!openAboutUsNav);
 		}
 	};
 
@@ -46,22 +62,26 @@ const Navbar = () => {
 		if (location.pathname) {
 			setOpenAboutUsNav(false);
 			setOpenServiceNav(false);
+			setIsOpen(false);
 		}
 	}, [path]);
 
-	useEffect(() => {
+	function stickyNav() {
 		window.addEventListener("scroll", () => {
 			if (
 				document.body.scrollTop > 80 ||
 				document.documentElement.scrollTop > 80
 			) {
-				headerRef.current.classList.add("header__shrink");
+				headerRef?.current?.classList.add("header__shrink");
 			} else {
-				headerRef.current.classList.remove("header__shrink");
+				headerRef?.current?.classList.remove("header__shrink");
 			}
 		});
+	}
 
-		return () => window.removeEventListener("scroll", null);
+	useEffect(() => {
+		stickyNav();
+		return () => window.removeEventListener("scroll", stickyNav);
 	}, []);
 
 	return (
@@ -86,8 +106,13 @@ const Navbar = () => {
 								<li>Drivers</li>
 							</Link>
 
+							<li onClick={partnerNav}>Partners</li>
+
+							<Link>
+								<li>Rydgo plus</li>
+							</Link>
+
 							<li onClick={aboutUsNav}>About Us</li>
-							<li>Contact us</li>
 						</ul>
 					</div>
 
@@ -126,6 +151,10 @@ const Navbar = () => {
 			)}
 			<div>
 				{openAboutUsNav && <AboutUsNav setOpenAboutUsNav={setOpenAboutUsNav} />}
+			</div>
+
+			<div>
+				{openPartnerNav && <PartnerNav setOpenPartnerNav={setOpenPartnerNav} />}
 			</div>
 		</article>
 	);

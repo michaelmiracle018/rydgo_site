@@ -8,13 +8,13 @@ import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
 import map from "../../assets/icons/MAP.png";
 import OnBoarding from "./OnBoarding";
-import Question from "../Questions";
 
 import QuestionPage from "../QuestionPage";
+import WhiteButton from "../../shared/WhiteButton";
+import { Link } from "react-router-dom";
 
 const Driver = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
-	const [isCashText, setIsCashText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
 	const [isMapText, setIsMapText] = useState(false);
 
@@ -58,6 +58,11 @@ const Driver = () => {
 								ride-hailing.
 							</p>
 						</div>
+						<a href="/driverSignUp" target="_blank">
+							<div className="driver__signup pb-6">
+								<WhiteButton>Sign up</WhiteButton>
+							</div>
+						</a>
 					</div>
 				</section>
 
@@ -133,7 +138,7 @@ const Driver = () => {
 										className="see__more-btn"
 										onClick={() => setIsReferralText(!isReferralText)}
 									>
-										{isTimeText ? "see less" : "see more"}
+										{isReferralText ? "see less" : "see more"}
 									</button>
 								</p>
 							</div>

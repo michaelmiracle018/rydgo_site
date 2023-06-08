@@ -7,7 +7,9 @@ const CarRentalBanner = () => {
 	return (
 		<section className="rentalbanner__container">
 			<div>
-			<img src={RentalBannerImage} alt="rideImage" width={500} className="absolute"/>
+				<img src={RentalBannerImage} alt="rideImage" width={500} className="absolute" />
+				
+				
 
 			<div className="text relative pt-28 pl-40 flex flex-col">
 

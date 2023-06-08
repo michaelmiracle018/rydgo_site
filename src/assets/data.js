@@ -8,6 +8,13 @@ import image04 from "../assets/icons/ICONs-32.png";
 import phone from "../assets/icons/ICONs-11.png";
 import car from "../assets/icons/ICONs-20.png";
 
+import kids from "../assets/images/kids_seat_2fe5015485.png";
+import executiveCar from "../assets/images/executive_6395d52741.png";
+import maxVan from "../assets/images/max_van_f9bb9ca049.png";
+import sedan from "../assets/images/sedan_7240765cf3.png";
+import halaKids from "../assets/images/hala_kids_copy_f3fa57fd0c.png";
+import vanTaxi from "../assets/images/van_taxi_58d4223ef8.png";
+import taxiCar from "../assets/images/taxi_car_3113f165e9.png";
 
 export const subLinks = [
 	{ id: "1", name: "Rydgo", url: "/ride", category: "GO" },
@@ -73,30 +80,105 @@ export const questions = [
 		id: 2,
 		title: "What Is The Duration In Signing Up?",
 		info: "Submission of your valid information takes less than 15 mins remotely and in-person depending on your zone.",
-		img: image03
+		img: image03,
 	},
 	{
 		id: 3,
 		title: "How Do a driver Pay commission to Rydgo?",
 		info: "Rydgo deduct commision through bank account! It's affordable, Requires finished trips payment only.",
-		img: pay
+		img: pay,
 	},
 	{
 		id: 4,
 		title: "Can I Use Rydgo For Just A Few Hours A Week?",
 		info: "Yes, because it's flexible with working hours such as part-time and full time.",
-		img: image04
+		img: image04,
 	},
 	{
 		id: 5,
 		title: "What If I Have No Smartphone?",
 		info: "You can operate with non-smartphones by using a code to connect to your riders or can be put on a smartphone payment method.",
-		img: phone
+		img: phone,
 	},
 	{
 		id: 6,
 		title: "What Happens If I Don't Have A Car?",
 		info: "Our team will offer you competitive rates on vehicles that are accepted on our platform and financed by our partners.",
-		img: car
+		img: car,
+	},
+];
+
+export const go_content = [
+	{
+		id: 1,
+		title: "Rides",
+		desc: "Order a ride with Rydgo, and go further, faster. ",
+		category: "ride",
+
+		images: [
+			{
+				id: "i11",
+				img: kids,
+				textImg: "Kids",
+			},
+			{
+				id: "i12",
+				img: executiveCar,
+				textImg: "Executive",
+			},
+			{
+				id: "i13",
+				img: maxVan,
+				textImg: "Max",
+			},
+			{
+				id: "i14",
+				img: sedan,
+				textImg: "Comfort",
+			},
+		],
+	},
+	{
+		id: 2,
+		title: "Taxi",
+		desc: "Dubai’s most affordable ride. ",
+		category: "taxi",
+
+		images: [
+			{
+				id: "i15",
+				img: halaKids,
+				textImg: "Taxi Kids",
+			},
+			{
+				id: "i16",
+				img: vanTaxi,
+				textImg: "Taxi Max",
+			},
+			{
+				id: "i17",
+				img: taxiCar,
+				textImg: "Taxi",
+			},
+		],
+	},
+
+	{
+		id: 3,
+		title: "Bike",
+		desc: "Bike your way, every day. ",
+		category: "bike",
+	},
+	{
+		id: 4,
+		title: "CarRental",
+		desc: "No hassle, no deposit, no paperwork. Rent a car for a month, a week, or even a day on Careem. Choose from a wide selection of cars and have it delivered straight to your door. ",
+		category: "rental",
+	},
+	{
+		id: 5,
+		title: "SchoolRides",
+		desc: "With just a tap, you can purchase a School Rides package that’s exclusively customised to meet yours and your child’s needs.  ",
+		category: "schoolRide",
 	},
 ];
