@@ -1,0 +1,62 @@
+.driver__signup-nav {
+	background-color: var(--light-red);
+	width: 100%;
+	height: 250px;
+
+	// ! ======DRIVER LEFT CONTENT=====
+	.driver__left-content {
+		img {
+			object-fit: cover;
+			width: 10rem;
+		}
+		.links__container {
+			.menu {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 17px;
+				line-height: 17px;
+				padding-right: 5px;
+				font-family: "Inter-Light";
+				
+				.link {
+					color: var(--clr-white);
+					display: inline-block;
+					position: relative;
+					margin: 0;
+					padding: 10px 20px;
+					cursor: pointer;
+				}
+				.submenu {
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 100%;
+					height: 0;
+					width: 100%;
+					overflow: hidden;
+					background: rgba(109, 108, 108, 0.2);
+					transition: 0.2s;
+					width: 9rem;
+
+					& li {
+						display: block;
+						position: relative;
+						margin: 0;
+						padding: 10px 20px;
+						cursor: pointer;
+						font-size: 15px;
+						
+					}
+				}
+				li:hover {
+					background: transparent;
+				}
+				li:hover ul {
+					height: 130px;
+				}
+			}
+		}
+	}
+
+	// ! =======END OF DRIVER LEFT CONTENT=====
+}

@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
-import Layouts from './components/Layouts'  
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
+import Layouts from "./components/Layouts";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import { useLocation } from "react-router-dom";
+import DriverSignUpNav from "./components/DriverSignUpNav";
 
 const App = () => {
-  return (
+	const [showNav, setShowNav] = useState(false);
+
+	const path = useLocation().pathname;
+	const driverPath = path?.substring(1);
+
+	useEffect(() => {
+		if (driverPath === "driverSignUp") {
+			setShowNav(true);
+		}
+	}, [path]);
+
+	return (
 		<div>
-			<Navbar />
+			{!showNav ? <Navbar /> : <DriverSignUpNav />}
 			<Layouts />
 			<Footer />
 		</div>
 	);
-}
+};
 
-export default App
+export default App;

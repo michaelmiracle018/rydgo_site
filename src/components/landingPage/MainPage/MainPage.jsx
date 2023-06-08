@@ -19,12 +19,12 @@ import image1 from "../../../assets/images/man-wearing-smart.png";
 import image02 from "../../../assets/images/happy-african-people 1.png";
 import Blog from "./Blog";
 import blogs from "../../../assets/blogs";
+import { Link } from "react-router-dom";
 
 const container = {
 	hidden: {},
 	visible: {
 		transition: { staggerChildren: 0.2 },
-
 	},
 };
 
@@ -106,13 +106,15 @@ const MainPage = () => {
 								}}
 							>
 								<div className="captain__text ">
-									<h4 className="white__text">Captain</h4>
+									<h4 className="white__text">Captains</h4>
 									<p className="py-6">
 										Drive with Rydgo and earn with every ride. Choose your own
 										hours, enjoy amazing Captain rewards and get professional
 										training.
 									</p>
-									<WhiteButton>Read more</WhiteButton>
+									<Link to='/driver'>
+										<WhiteButton>Read more</WhiteButton>
+									</Link>
 								</div>
 							</motion.div>
 						</div>

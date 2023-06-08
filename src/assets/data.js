@@ -116,22 +116,22 @@ export const go_content = [
 
 		images: [
 			{
-				id: 'i11',
+				id: "i11",
 				img: kids,
 				textImg: "Kids",
 			},
 			{
-				id: 'i12',
+				id: "i12",
 				img: executiveCar,
 				textImg: "Executive",
 			},
 			{
-				id: 'i13',
+				id: "i13",
 				img: maxVan,
 				textImg: "Max",
 			},
 			{
-				id: 'i14',
+				id: "i14",
 				img: sedan,
 				textImg: "Comfort",
 			},
@@ -145,19 +145,19 @@ export const go_content = [
 
 		images: [
 			{
-				id: 'i15',
+				id: "i15",
 				img: halaKids,
-				textImg: "Hala",
+				textImg: "Taxi Kids",
 			},
 			{
-				id: 'i16',
+				id: "i16",
 				img: vanTaxi,
-				textImg: "Hala Max",
+				textImg: "Taxi Max",
 			},
 			{
-				id: 'i17',
+				id: "i17",
 				img: taxiCar,
-				textImg: "Hala Kids",
+				textImg: "Taxi",
 			},
 		],
 	},

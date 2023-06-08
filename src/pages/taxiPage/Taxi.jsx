@@ -41,10 +41,8 @@ const Taxi = () => {
 					<div>
 						<GoWrap />
 					</div>
-
 					{/* RIDE TAXI CONTENT*/}
-
-					<section className="ride_comfort__container">
+					<section className="ride_comfort__container" id="Taxi">
 						<div className="center__item">
 							<div className="ride_comfort__wrap">
 								<motion.div
@@ -96,7 +94,7 @@ const Taxi = () => {
 						</div>
 					</section>
 
-					<section className="slide__content-about">
+					<section className="slide__content-about" id="Taxi Max">
 						{/* TAXI MAX CONTENT*/}
 
 						<div className="ride__content center__item">
@@ -137,7 +135,7 @@ const Taxi = () => {
 
 					{/* TAXI KIDZ CONTENT*/}
 
-					<section className="ride_max__container">
+					<section className="ride_max__container" id="Taxi Kids">
 						<div className="center__item">
 							<div className="ride_max__wrap">
 								<motion.div

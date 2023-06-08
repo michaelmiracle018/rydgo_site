@@ -1,5 +1,6 @@
 import React from "react";
 import "./goStyles.scss";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const GoContent = ({ items }) => {
 	return (
@@ -18,10 +19,12 @@ const GoContent = ({ items }) => {
 									{item?.images?.map((image, index) => {
 										const { img, textImg } = image;
 										return (
-											<div className="img__flex" key={image.id}>
-												<img src={img} alt="" />
-												<h5 className="text-center">{textImg}</h5>
-											</div>
+											<AnchorLink href={`#${textImg}`}>
+												<div className="img__flex" key={image.id}>
+													<img src={img} alt="" />
+													<h5 className="text-center">{textImg}</h5>
+												</div>
+											</AnchorLink>
 										);
 									})}
 								</div>

@@ -4,6 +4,7 @@ import { go_content } from "../../assets/data";
 import GoContent from "./GoContent";
 import "./goStyles.scss";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const GoWrap = () => {
 	const [goItems, setGoItems] = useState(go_content);
@@ -33,7 +34,8 @@ const GoWrap = () => {
 				</div>
 				<div className="">
 					<div className="go__btn-container">
-						<NavLink to='/ride'
+						<NavLink
+							to="/ride"
 							className={` filter__btn ${
 								category === "ride" ? "active__btn" : ""
 							}`}
@@ -41,7 +43,8 @@ const GoWrap = () => {
 						>
 							Rides
 						</NavLink>
-						<NavLink to='/taxi'
+						<NavLink
+							to="/taxi"
 							className={` filter__btn ${
 								category === "taxi" ? "active__btn" : ""
 							}`}
@@ -49,7 +52,8 @@ const GoWrap = () => {
 						>
 							Taxi
 						</NavLink>
-						<NavLink to='/bike'
+						<NavLink
+							to="/bike"
 							className={` filter__btn ${
 								category === "bike" ? "active__btn" : ""
 							}`}
@@ -57,7 +61,8 @@ const GoWrap = () => {
 						>
 							Bike
 						</NavLink>
-						<NavLink to='/rental'
+						<NavLink
+							to="/rental"
 							className={` filter__btn ${
 								category === "rental" ? "active__btn" : ""
 							}`}
@@ -65,7 +70,8 @@ const GoWrap = () => {
 						>
 							Car Rental
 						</NavLink>
-						<NavLink to='/schoolRide'
+						<NavLink
+							to="/schoolRide"
 							className={` filter__btn ${
 								category === "schoolRide" ? "active__btn" : ""
 							}`}

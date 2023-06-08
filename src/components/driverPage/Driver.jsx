@@ -10,6 +10,8 @@ import map from "../../assets/icons/MAP.png";
 import OnBoarding from "./OnBoarding";
 
 import QuestionPage from "../QuestionPage";
+import WhiteButton from "../../shared/WhiteButton";
+import { Link } from "react-router-dom";
 
 const Driver = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
@@ -56,6 +58,11 @@ const Driver = () => {
 								ride-hailing.
 							</p>
 						</div>
+						<a href="/driverSignUp" target="_blank">
+							<div className="driver__signup pb-6">
+								<WhiteButton>Sign up</WhiteButton>
+							</div>
+						</a>
 					</div>
 				</section>
 
