@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import RideBanner from "../component/banner/ridebanner/RideBanner";
-//import RideBannerImage from "../../assets/images/Rectangle15.png";
+import DineBanner from "../component/banner/dinebanner/DineBanner";
+//import DineBannerImage from "../../assets/images/Rectangle15.png";
 import "../ridePage/ride.scss";
 import HText from "../../shared/HText";
 import RedButton from "../../shared/RedButton";
@@ -20,99 +20,24 @@ import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
 import QuestionPage from "../../components/QuestionPage";
 
-const Ride = () => {
+const Dine = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
 
 	return (
 		<>
-			<RideBanner />
+			<DineBanner />
 
 
 			<div className="flex flex-col justify-center items-center my-20 mx-10">
 
-            <h4 className="text-5xl font-bold">Rides</h4>
+            <h4 className="text-5xl font-bold">Rydine</h4>
 			<small className="text-xl mt-2 text-[#ff0000]">
-			Order a ride with Rydgo, and go further, faster.
+			Enjoy exclusive discounts at Ghana’s top restaurants, only with Rydgo Dine.
 			</small>
 
             </div>
 
-
-
-			<section className="driver__card-info-container">
-				{/* DRIVER CARD CONTENT */}
-
-				<div className="single__card-info">
-					<div className="card__img">
-						<img src={referral} alt="cash" />
-					</div>
-					<div className="card__info-text">
-						<div>
-							<h4>Choose your ride</h4>
-							<p>
-								Select from a wide range of options and get your ride within
-								minutes, or schedule one for later.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div className="single__card-info">
-					<div className="card__img">
-						<img src={time} alt="cash" />
-					</div>
-					<div className="card__info-text">
-						<div>
-							<h4>Track your ride</h4>
-							<p>
-								Track your ride in real time from the moment a Captain is
-								assigned until you arrive at your destination.
-								{isTimeText && (
-									<div>
-										a discount on ride are promptly credited to their wallet
-										tracking the trip. T&C applied.
-									</div>
-								)}
-								<button
-									className="see__more-btn"
-									onClick={() => setIsTimeText(!isTimeText)}
-								>
-									{isTimeText ? "see less" : "see more"}
-								</button>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div className="single__card-info">
-					<div className="card__img">
-						<img src={cash} alt="cash" />
-					</div>
-					<div className="card__info-text">
-						<div>
-							<h4>Pay securely</h4>
-							<p>
-								Card, Rydgo Pay, Apple Pay or cash; you can pay securely on
-								Rydgo. ...
-								{isReferralText && (
-									<div>
-										from out of money, Rydgo makes sure that drivers who take a
-										discount on ride are promptly credited to their wallet
-										tracking the trip. T&C applied.
-									</div>
-								)}
-								<button
-									className="see__more-btn"
-									onClick={() => setIsReferralText(!isReferralText)}
-								>
-									{isTimeText ? "see less" : "see more"}
-								</button>
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
 
 			<section className="ride__page-container">
 				<div className="ride__page-content">
@@ -149,13 +74,11 @@ const Ride = () => {
 									}}
 								>
 									<div className="ride_comfort__text ">
-										<h4 className="white__text">Comfort</h4>
+										<h4 className="white__text">Let RyDineOut be your guide.</h4>
 										<p className="py-6">
-											Use our Rydgo Premium rides for everyday trips and
-											commutes. We’ll get you where you need to go so you don’t
-											have to.
+										With just a tap, you unlock a world of new experiences, unparalleled flavours, and unforgettable memories. Expand your palate and discover new favourite places around Ghana.
 										</p>
-										<WhiteButton>Book your ride</WhiteButton>
+										{/* <WhiteButton>Book your ride</WhiteButton> */}
 									</div>
 								</motion.div>
 							</div>
@@ -189,12 +112,11 @@ const Ride = () => {
 								className="text__content"
 							>
 								<div>
-									<HText>Executive</HText>
+									<HText>Check the vibe.</HText>
 									<p className="py-6">
-										Enjoy the ultimate convenience in a ride, with just a few
-										clicks. Travel in comfort and in style.
+									Know all about the ambiance, menu, amenities and more, even before you visit the restaurant.
 									</p>
-									<RedButton>Book your ride</RedButton>
+									<RedButton>Try Rydine</RedButton>
 								</div>
 							</motion.div>
 							<motion.div
@@ -242,13 +164,11 @@ const Ride = () => {
 									}}
 								>
 									<div className="ride_max__text ">
-										<h4 className="white__text">Max</h4>
+										<h4 className="white__text">We’ll take you there.</h4>
 										<p className="py-6">
-											Are you traveling in a big group? Take our Premium Max
-											rides; we can take up to six people to their next
-											destination.
+										Take full advantage of your Rydgo app. Book a ride in a tap, straight from Rydgo ride. Choose from our fleet of cars or taxi.
 										</p>
-										<WhiteButton>Book your ride</WhiteButton>
+										<WhiteButton>Try Rydine</WhiteButton>
 									</div>
 								</motion.div>
 							</div>
@@ -276,15 +196,13 @@ const Ride = () => {
 						<div className="engineer__content center__item">
 							<div className="text__content">
 								<motion.div variants={textAnimate}>
-									<HText>Kids</HText>
+									<HText>Pay with your RydWallet.</HText>
 								</motion.div>
 								<motion.div variants={textAnimate}>
 									<p className="py-6">
-										Kids are on the move too. Book a Kids ride that includes a
-										child seat. Our wonderful Captains will also help you with
-										those tricky buckles if you need it.
+									Pay the restaurant bill and even add a tip using your saved cards, Apple Pay or Rydgo wallet balance.
 									</p>
-									<RedButton>Read more</RedButton>
+									<RedButton>Try Rydine</RedButton>
 								</motion.div>
 							</div>
 							<motion.div variants={imageAnimate}>
@@ -294,6 +212,57 @@ const Ride = () => {
 							</motion.div>
 						</div>
 					</motion.div>
+
+
+					<section className="driver__card-info-container">
+				{/* DRIVER CARD CONTENT */}
+
+				<div className="single__card-info">
+					<div className="card__img">
+						<img src={referral} alt="cash" />
+					</div>
+					<div className="card__info-text">
+						<div>
+							<h4>Instant booking</h4>
+							<p>
+							Make reservations with Rydine
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div className="single__card-info">
+					<div className="card__img">
+						<img src={time} alt="cash" />
+					</div>
+					<div className="card__info-text">
+						<div>
+							<h4>Bill split</h4>
+							<p>
+							Share the load with your friends and family
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div className="single__card-info">
+					<div className="card__img">
+						<img src={cash} alt="cash" />
+					</div>
+					<div className="card__info-text">
+						<div>
+							<h4>...and many more!</h4>
+							<p>
+							Watch this space for more updates
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
 
 					{/* EXPLORE MORE WITH RYDGO CONTENT */}
 
@@ -357,7 +326,7 @@ const Ride = () => {
 							</div>
 							<div className="card__info-text">
 								<div>
-									<h4>Pay</h4>
+									<h4>Make Payment</h4>
 									<p>
 										Build up Gh2.00 cedis or further awards for each successful
 										referral, and relying on the promotional term, the rider
@@ -390,4 +359,4 @@ const Ride = () => {
 	);
 };
 
-export default Ride;
+export default Dine;

@@ -13,10 +13,6 @@ import friendsImg from "../../../assets/images/young-friends-looking-smartphone-
 import { motion } from "framer-motion";
 import { imageAnimate } from "../../../animations";
 import { textAnimate } from "../../../animations";
-import { imageAnimate1 } from "../../../animations";
-import deliveryMan from "../../../assets/images/delivery-man.png";
-import image1 from "../../../assets/images/man-wearing-smart.png";
-import image02 from "../../../assets/images/happy-african-people 1.png";
 import Blog from "./Blog";
 import blogs from "../../../assets/blogs";
 

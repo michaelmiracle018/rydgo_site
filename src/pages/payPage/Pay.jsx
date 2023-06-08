@@ -1,39 +1,56 @@
 import React, { useState } from "react";
-import RideBanner from "../component/banner/ridebanner/RideBanner";
+import PayBanner from "../component/banner/paybanner/PayBanner";
 //import RideBannerImage from "../../assets/images/Rectangle15.png";
-import "../ridePage/ride.scss";
+import "../payPage/pay.scss";
 import HText from "../../shared/HText";
 import RedButton from "../../shared/RedButton";
 import WhiteButton from "../../shared/WhiteButton";
 import ComfortCareImage from "../../assets/images/comfort.png";
 import ExecutiveCarImage from "../../assets/images/executive.png";
 import MaxCarImage from "../../assets/images/max.png";
-import KidsCarImage from "../../assets/images/kids.png";
 import car1 from "../../assets/images/hyundai_PNG11217 1.png";
 import car2 from "../../assets/images/red-hyundai-car-png-15 2.png";
 import { motion } from "framer-motion";
 import { imageAnimate } from "../../animations";
-import { textAnimate } from "../../animations";
 
 import cash from "../../assets/icons/CARD.png";
 import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
 import QuestionPage from "../../components/QuestionPage";
 
-const Ride = () => {
+import Blog from "../../components/landingPage/MainPage/Blog";
+import blogs from "../../assets/blogs";
+
+
+
+
+
+const container = {
+	hidden: {},
+	visible: {
+		transition: { staggerChildren: 0.2 },
+
+	},
+};
+
+
+
+
+
+const Pay = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
 
 	return (
 		<>
-			<RideBanner />
+			<PayBanner />
 
 
 			<div className="flex flex-col justify-center items-center my-20 mx-10">
 
-            <h4 className="text-5xl font-bold">Rides</h4>
+            <h4 className="text-5xl font-bold">RydWallet</h4>
 			<small className="text-xl mt-2 text-[#ff0000]">
-			Order a ride with Rydgo, and go further, faster.
+			Never miss a payment with RydWallet.
 			</small>
 
             </div>
@@ -45,14 +62,27 @@ const Ride = () => {
 
 				<div className="single__card-info">
 					<div className="card__img">
+						<img src={cash} alt="cash" />
+					</div>
+					<div className="card__info-text">
+						<div>
+							<h4>Real payment, instantly</h4>
+							<p>
+							Top-up cash into your Rydwallet, and make payment anytime you need it.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div className="single__card-info">
+					<div className="card__img">
 						<img src={referral} alt="cash" />
 					</div>
 					<div className="card__info-text">
 						<div>
-							<h4>Choose your ride</h4>
+							<h4>Pay anyone, any way.</h4>
 							<p>
-								Select from a wide range of options and get your ride within
-								minutes, or schedule one for later.
+							Use your saved cards or Rydwallet balance to pay for things on our app.
 							</p>
 						</div>
 					</div>
@@ -64,54 +94,15 @@ const Ride = () => {
 					</div>
 					<div className="card__info-text">
 						<div>
-							<h4>Track your ride</h4>
+							<h4>It's safe and secure.</h4>
 							<p>
-								Track your ride in real time from the moment a Captain is
-								assigned until you arrive at your destination.
-								{isTimeText && (
-									<div>
-										a discount on ride are promptly credited to their wallet
-										tracking the trip. T&C applied.
-									</div>
-								)}
-								<button
-									className="see__more-btn"
-									onClick={() => setIsTimeText(!isTimeText)}
-								>
-									{isTimeText ? "see less" : "see more"}
-								</button>
+							Our product is built to protect your cards and make payment, and we’re approved by the Ghana central bank.
 							</p>
 						</div>
 					</div>
 				</div>
 
-				<div className="single__card-info">
-					<div className="card__img">
-						<img src={cash} alt="cash" />
-					</div>
-					<div className="card__info-text">
-						<div>
-							<h4>Pay securely</h4>
-							<p>
-								Card, Rydgo Pay, Apple Pay or cash; you can pay securely on
-								Rydgo. ...
-								{isReferralText && (
-									<div>
-										from out of money, Rydgo makes sure that drivers who take a
-										discount on ride are promptly credited to their wallet
-										tracking the trip. T&C applied.
-									</div>
-								)}
-								<button
-									className="see__more-btn"
-									onClick={() => setIsReferralText(!isReferralText)}
-								>
-									{isTimeText ? "see less" : "see more"}
-								</button>
-							</p>
-						</div>
-					</div>
-				</div>
+				
 			</section>
 
 			<section className="ride__page-container">
@@ -149,13 +140,11 @@ const Ride = () => {
 									}}
 								>
 									<div className="ride_comfort__text ">
-										<h4 className="white__text">Comfort</h4>
+										<h4 className="white__text">Make payment</h4>
 										<p className="py-6">
-											Use our Rydgo Premium rides for everyday trips and
-											commutes. We’ll get you where you need to go so you don’t
-											have to.
+										Effortlessly make payment on our app, and our driver receive it in just a minutes. Yes - it’s that simple.
 										</p>
-										<WhiteButton>Book your ride</WhiteButton>
+										<WhiteButton>Find out more</WhiteButton>
 									</div>
 								</motion.div>
 							</div>
@@ -189,12 +178,11 @@ const Ride = () => {
 								className="text__content"
 							>
 								<div>
-									<HText>Executive</HText>
+									<HText>Bills & recharge</HText>
 									<p className="py-6">
-										Enjoy the ultimate convenience in a ride, with just a few
-										clicks. Travel in comfort and in style.
+									From your phone to ride bills, to top ups - pay your bills on the app within seconds.
 									</p>
-									<RedButton>Book your ride</RedButton>
+									<RedButton>Find out more</RedButton>
 								</div>
 							</motion.div>
 							<motion.div
@@ -242,13 +230,11 @@ const Ride = () => {
 									}}
 								>
 									<div className="ride_max__text ">
-										<h4 className="white__text">Max</h4>
+										<h4 className="white__text">Request a ride and make payment</h4>
 										<p className="py-6">
-											Are you traveling in a big group? Take our Premium Max
-											rides; we can take up to six people to their next
-											destination.
+										Make payment safely, using only RydWallet. Making it easy.
 										</p>
-										<WhiteButton>Book your ride</WhiteButton>
+										<WhiteButton>Find out more</WhiteButton>
 									</div>
 								</motion.div>
 							</div>
@@ -266,34 +252,27 @@ const Ride = () => {
 						</div>
 					</section>
 
-					{/* Kids CONTENT*/}
-					<motion.div
-						initial={"offscreen"}
-						whileInView={"onscreen"}
-						viewport={{ once: false, amount: 0.5 }}
-						transition={{ staggerChildren: 0.5 }}
-					>
-						<div className="engineer__content center__item">
-							<div className="text__content">
-								<motion.div variants={textAnimate}>
-									<HText>Kids</HText>
-								</motion.div>
-								<motion.div variants={textAnimate}>
-									<p className="py-6">
-										Kids are on the move too. Book a Kids ride that includes a
-										child seat. Our wonderful Captains will also help you with
-										those tricky buckles if you need it.
-									</p>
-									<RedButton>Read more</RedButton>
-								</motion.div>
-							</div>
-							<motion.div variants={imageAnimate}>
-								<div className="img__wrap">
-									<img src={KidsCarImage} alt="kidsCar" />
-								</div>
-							</motion.div>
-						</div>
-					</motion.div>
+					
+
+					{/* RydPay CONTENT*/}
+				<section className="our__blog">
+					<div className="our__blog-content center__item">
+						<h3 className="text-5xl font-bold">Everyday payments made simple</h3>
+
+						<motion.div
+							initial="hidden"
+							whileInView="visible"
+							viewport={{ once: true, amount: 0.7 }}
+							variants={container}
+							className="blog__cards"
+						>
+							{blogs.map((blog) => (
+								<Blog key={blog.id} blog={blog} />
+							))}
+						</motion.div>
+					</div>
+				</section>
+
 
 					{/* EXPLORE MORE WITH RYDGO CONTENT */}
 
@@ -390,4 +369,4 @@ const Ride = () => {
 	);
 };
 
-export default Ride;
+export default Pay;
