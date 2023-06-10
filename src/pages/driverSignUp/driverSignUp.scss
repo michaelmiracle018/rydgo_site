@@ -1,6 +1,24 @@
 .driver__signup-nav {
 	.driver__signup-sub {
-		
+		.captain__container {
+			.captain__sub-container {
+				h2 {
+					border-radius: 4px;
+					box-shadow: none;
+					font-style: normal;
+					font-weight: 600;
+					font-size: clamp(2rem, 2.5vw, 6rem);
+					font-family: "Inter-Bold";
+				line-height: 130.62%;
+
+					margin-top: 1rem;
+				}
+				.captain__card-content {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				}
+			}
+		}
 
 		// ! DRIVER LEFT CONTENT
 		// ! DRIVER LEFT CONTENT

@@ -4,7 +4,7 @@ import Layouts from "./components/Layouts";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { useLocation } from "react-router-dom";
-import DriverSignUpNav from "./components/DriverSignUpNav";
+import DriverSignUpNav from "./components/driverSignUpComponent/DriverSignUpNav";
 
 const App = () => {
 	const [showNav, setShowNav] = useState(false);

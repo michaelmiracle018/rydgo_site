@@ -1,26 +1,85 @@
-.driver__signup-nav {
+.driver__nav-container {
 	background-color: var(--light-red);
 	width: 100%;
-	height: 250px;
-
-	// ! ======DRIVER LEFT CONTENT=====
-	.driver__left-content {
-		img {
-			object-fit: cover;
-			width: 10rem;
+	height: 500px;
+	@media screen and (max-width: 950px) {
+		height: 100%;
+	}
+	.driver__signup-nav {
+		max-width: 1100px;
+		margin: auto;
+		width: 95%;
+		@media screen and (max-width: 800px) {
+			padding-bottom: 2rem;
 		}
-		.links__container {
-			.menu {
+
+		.nav-center {
+			@media screen and (min-width: 800px) {
+				max-width: 1170px;
+				margin: 0 auto;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 1rem;
+				margin-bottom: 3rem;
+			}
+
+			.nav-header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 1rem;
+				border-bottom: 1px solid #eee;
+
+				@media screen and (min-width: 800px) {
+					padding: 0;
+					border-bottom: none;
+				}
+
+				img {
+					height: 60px;
+				}
+
+				.nav-toggle {
+					font-size: 1.5rem;
+					color: var(--clr-white);
+					background: transparent;
+					border-color: transparent;
+					transition: var(--transition);
+					cursor: pointer;
+					@media screen and (min-width: 800px) {
+						display: none;
+					}
+				}
+			}
+			.links-container {
+				height: 0;
+				transition: var(--transition);
+				z-index: 1;
+				@media screen and (max-width: 800px) {
+					overflow: hidden;
+				}
+
+				@media screen and (min-width: 800px) {
+					height: auto !important;
+				}
+			}
+
+			.links {
+				text-transform: capitalize;
+				display: block;
 				font-style: normal;
 				font-weight: 600;
 				font-size: 17px;
 				line-height: 17px;
 				padding-right: 5px;
 				font-family: "Inter-Light";
-				
+				margin-top: 7px;
+				@media screen and (min-width: 800px) {
+					display: flex;
+				}
 				.link {
 					color: var(--clr-white);
-					display: inline-block;
 					position: relative;
 					margin: 0;
 					padding: 10px 20px;
@@ -28,26 +87,35 @@
 				}
 				.submenu {
 					display: block;
-					position: absolute;
 					left: 0;
 					top: 100%;
 					height: 0;
 					width: 100%;
 					overflow: hidden;
-					background: rgba(109, 108, 108, 0.2);
+					background: rgba(109, 108, 108, 0.1);
 					transition: 0.2s;
 					width: 9rem;
+					li:hover {
+						padding-left: 1.5rem;
+					}
+					@media screen and (max-width: 800px) {
+						width: 100%;
+					}
+					@media screen and (min-width: 800px) {
+						position: absolute;
+					}
 
 					& li {
 						display: block;
 						position: relative;
 						margin: 0;
-						padding: 10px 20px;
+						padding: 10px 15px;
 						cursor: pointer;
 						font-size: 15px;
-						
+						transition: 0.6s ease-in-out;
 					}
 				}
+
 				li:hover {
 					background: transparent;
 				}
@@ -56,7 +124,153 @@
 				}
 			}
 		}
+		.sign__in-btn {
+			.sign__in {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 17px;
+				line-height: 17px;
+				padding-right: 5px;
+				font-family: "Inter-Light";
+				color: #fff;
+				border: 1px solid #ccc;
+				padding: 10px;
+				display: none;
+				@media screen and (min-width: 800px) {
+					display: block;
+				}
+			}
+		}
 	}
 
-	// ! =======END OF DRIVER LEFT CONTENT=====
+	.card__signup-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1100px;
+		margin: auto;
+		width: 95%;
+		@media screen and (max-width: 950px) {
+			flex-direction: column;
+			gap: 3rem;
+		}
+
+		.driver__signup-text {
+			// margin-top: 2rem;
+			h3 {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 35px;
+				padding-right: 5px;
+				font-family: "Inter-Bold";
+				color: #fff;
+			}
+			p {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 17px;
+				padding-right: 5px;
+				font-family: "Inter-Light";
+				color: #fff;
+			}
+		}
+
+		.signup__box {
+			.card {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				form {
+					box-shadow: 0 4px 8px 0 rgba(82, 97, 115, 0.18);
+					border-radius: 8px;
+					background-color: #fff;
+					width: 500px;
+					height: 100%;
+					padding: 2rem 2rem 3rem 2rem;
+					flex: 2;
+					@media screen and (max-width: 800px) {
+						width: 100%;
+						max-width: 600px;
+					}
+					h3 {
+						font-style: normal;
+						font-weight: 600;
+						font-size: 25px;
+						padding-right: 5px;
+						font-family: "Inter-Light";
+						color: #000;
+					}
+					.input__container {
+						margin-top: 2rem;
+						.select__input {
+							select {
+								width: 100%;
+								font-size: 16px;
+								outline: 0px;
+								height: 48px;
+								display: block;
+								padding: 6px 12px;
+								color: #000;
+								border: 1px solid #ccc;
+								border-radius: 4px;
+							}
+						}
+						.first__input {
+							display: flex;
+							align-items: center;
+							margin-top: 1rem;
+							border: 1px solid #ccc;
+							border-radius: 4px;
+							img {
+								height: 20px;
+								margin: 0 0.7rem;
+							}
+							input {
+								width: 100%;
+								font-size: 16px;
+								outline: 0px;
+								height: 48px;
+								display: block;
+								padding: 6px 12px;
+								color: #000;
+								border: none;
+							}
+						}
+
+						.second__input {
+							margin-top: 1rem;
+							input {
+								width: 100%;
+								font-size: 16px;
+								outline: 0px;
+								height: 48px;
+								display: block;
+								padding: 6px 12px;
+								color: #000;
+								border: 1px solid #ccc;
+								border-radius: 4px;
+							}
+						}
+						.register__btn {
+							width: 100%;
+							color: #fff;
+							background-color: var(--light-red);
+							border-radius: 4px;
+							box-shadow: none;
+							font-style: normal;
+							font-weight: 600;
+							font-size: 20px;
+							font-family: "Inter-Light";
+							margin-top: 1rem;
+							padding: 10px;
+						}
+					}
+				}
+			}
+		}
+
+	
+	}
+
 }
