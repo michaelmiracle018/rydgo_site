@@ -11,23 +11,23 @@ import SchoolRIde from "../pages/schoolRidePage/SchoolRide";
 import DriverSignUp from "../pages/driverSignUp/DriverSignUp";
 
 const RoutesPage = () => {
-	return (
-		<div>
-			<Routes>
-				<Route>
-					<Route path="/" element={<Home to="/" />}></Route>
-					<Route path="/driver" element={<Driver />}></Route>
-					<Route path="/rider" element={<RidersPage />}></Route>
-					<Route path="/ride" element={<Ride />}></Route>
-					<Route path="/taxi" element={<Taxi />}></Route>
-					<Route path="/bike" element={<Bike />}></Route>
-					<Route path="/rental" element={<CarRental />}></Route>
-					<Route path="/schoolRide" element={<SchoolRIde />}></Route>
-					<Route path="/driverSignUp" element={<DriverSignUp />}></Route>
-				</Route>
-			</Routes>
-		</div>
-	);
+  return (
+    <div>
+      <Routes>
+        <Route>
+          <Route path="/" element={<Home to="/" />}></Route>
+          <Route path="/driver" element={<Driver />}></Route>
+          <Route path="/rider" element={<RidersPage />}></Route>
+          <Route path="/ride" element={<Ride />}></Route>
+          <Route path="/taxi" element={<Taxi />}></Route>
+          <Route path="/bike" element={<Bike />}></Route>
+          <Route path="/rental" element={<CarRental />}></Route>
+          <Route path="/schoolRide" element={<SchoolRIde />}></Route>
+          <Route path="/driverSignUp" element={<DriverSignUp />}></Route>
+        </Route>
+      </Routes>
+    </div>
+  );
 };
 
 export default RoutesPage;
