@@ -108,8 +108,8 @@ const Navbar = () => {
 
               <li onClick={partnerNav}>Partners</li>
 
-              <Link>
-                <li>Rydgo plus</li>
+              <Link to="/rydgotuesday">
+                <li>Rydgo Tuesday</li>
               </Link>
 
               <li onClick={aboutUsNav}>About Us</li>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import RydDropBanner from "../component/banner/rydDropbanner/RydDropBanner";
-//import RideBannerImage from "../../assets/images/Rectangle15.png";
-import "../ryddropPage/ryddrop.scss";
+import RydTourBanner from "../component/banner/rydTourbanner/RydTourBanner";
+import "../rydtourPage/rydtour.scss";
 import HText from "../../shared/HText";
 import RedButton from "../../shared/RedButton";
 import WhiteButton from "../../shared/WhiteButton";
@@ -18,74 +17,28 @@ import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
 import QuestionPage from "../../components/QuestionPage";
 
-const RydDrop = () => {
+const RydTour = () => {
   const [isTimeText, setIsTimeText] = useState(false);
   const [isReferralText, setIsReferralText] = useState(false);
 
   return (
     <>
-      <RydDropBanner />
+      <RydTourBanner />
 
       <div className="flex flex-col justify-center items-center my-20 mx-10">
-        <h4 className="text-5xl font-bold">RydDrop</h4>
-        <small className="text-xl mt-2 text-[#ff0000]">
-          We'll handle your deliveries for you.
+        <h4 className="text-5xl font-bold">RydTour</h4>
+        <small className="text-xl mt-2 text-[#ff0000] text-center">
+          Looking for something fun to do? We’ve got you covered. <br />
+          Book a ride for endless attractions, <br />
+          events and activities across the UAE.
         </small>
       </div>
 
-      <section className="driver__card-info-container">
-        {/* DELIVERY CARD CONTENT */}
-
-        <div className="single__card-info">
-          <div className="card__img">
-            <img src={referral} alt="cash" />
-          </div>
-
-          <div className="card__info-text">
-            <div>
-              <h4>Buy anything</h4>
-              <p>
-                Our Captains will purchase any item from the store for you and
-                deliver it straight to your door.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="single__card-info">
-          <div className="card__img">
-            <img src={time} alt="cash" />
-          </div>
-          <div className="card__info-text">
-            <div>
-              <h4>Send anything</h4>
-              <p>
-                Forgot something at your friend’s place? Our Captains will pick
-                up any package for you or from you and take it where it needs to
-                go.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="single__card-info">
-          <div className="card__img">
-            <img src={cash} alt="cash" />
-          </div>
-          <div className="card__info-text">
-            <div>
-              <h4>Pay securely</h4>
-              <p>Coming soon...!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="ryddrop__page-container">
-        <div className="ryddrop__page-content">
+      <section className="rydtour__page-container">
+        <div className="rydtour__page-content">
           <div className="bg__image"></div>
 
-          {/* Rydgo Delivery CONTENT*/}
+          {/* RydTour CONTENT*/}
 
           <section className="ride_comfort__container">
             <div className="center__item">
@@ -116,12 +69,12 @@ const RydDrop = () => {
                   }}
                 >
                   <div className="ride_comfort__text ">
-                    <h4 className="white__text">Instant deliveries.</h4>
+                    <h4 className="white__text">Museums and attractions</h4>
                     <p className="py-6">
-                      We’ll pick up a package for you or from you and take it
-                      where it needs to go, instantly with a tap.
+                      Learn more about the history of the UAE and experience our
+                      wide range of thrilling activities for the whole family.
                     </p>
-                    <WhiteButton>Book now</WhiteButton>
+                    <WhiteButton>Book your ride</WhiteButton>
                   </div>
                 </motion.div>
               </div>
@@ -155,12 +108,12 @@ const RydDrop = () => {
                 className="text__content"
               >
                 <div>
-                  <HText>Track your orders live</HText>
+                  <HText>Live shows and events</HText>
                   <p className="py-6">
-                    Know exactly where your items are with real time updates
-                    every step of the way, from pickup to dropoff.
+                    Book tickets for a wide selection of live events and shows.
+                    Elevate your weekdays and spice up your weekends.
                   </p>
-                  <RedButton>Book now</RedButton>
+                  <RedButton>Book your ride</RedButton>
                 </div>
               </motion.div>
               <motion.div
@@ -177,9 +130,63 @@ const RydDrop = () => {
             </div>
           </section>
 
+          {/* TAXI KIDZ CONTENT*/}
+
+          <section className="ride_max__container">
+            <div className="center__item">
+              <div className="ride_max__wrap">
+                <motion.div
+                  initial={"hidden"}
+                  whileInView={"visible"}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ staggerChildren: 0.5 }}
+                  variants={imageAnimate}
+                >
+                  <div className="ride_max__img">
+                    <img
+                      src={TaxikidsImage}
+                      alt="taxiKids"
+                      style={{ width: "580px", borderRadius: "25px" }}
+                    />
+                  </div>
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.9 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
+                  <div className="ride_max__text ">
+                    <h4 className="white__text">Cinemas</h4>
+                    <p className="py-6">
+                      Catch the latest movies before your Twitter feed is filled
+                      with spoilers.
+                    </p>
+                    <WhiteButton>Book your ride</WhiteButton>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+            {/* CAR CONTENT*/}
+
+            <div className="car__image car1">
+              <img src={car1} alt="" />
+            </div>
+            <div className="car__image car2">
+              <img src={car2} alt="" />
+            </div>
+            <div className="car__image car3">
+              <img src={car2} alt="" />
+            </div>
+          </section>
+
           {/* EXPLORE MORE WITH RYDGO CONTENT */}
 
-          <div className="flex justify-center items-center mx-10 my-20">
+          <div className="flex justify-center items-center mx-10">
             <h4 className="text-5xl font-bold">Explore more with Rydgo</h4>
           </div>
 
@@ -273,4 +280,4 @@ const RydDrop = () => {
   );
 };
 
-export default RydDrop;
+export default RydTour;
