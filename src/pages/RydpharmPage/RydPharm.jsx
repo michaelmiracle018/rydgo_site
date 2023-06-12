@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import RydPharmBanner from "../component/banner/rydPharmbanner/RydPharmBanner";
-import "../rydpharmPage/rydpharm.scss";
+import "./rydpharm.scss";
 import HText from "../../shared/HText";
 import RedButton from "../../shared/RedButton";
 import WhiteButton from "../../shared/WhiteButton";
 import TaxidriverImage from "../../assets/images/taxDriver.png";
 import TaximaxImage from "../../assets/images/taxiMax.png";
-import TaxikidsImage from "../../assets/images/taxiKids.png";
 import car1 from "../../assets/images/hyundai_PNG11217 1.png";
 import car2 from "../../assets/images/red-hyundai-car-png-15 2.png";
 import { motion } from "framer-motion";
@@ -18,8 +17,8 @@ import referral from "../../assets/icons/REFERRAL.png";
 import QuestionPage from "../../components/QuestionPage";
 
 const RydPharm = () => {
-  const [isTimeText, setIsTimeText] = useState(false);
-  const [isReferralText, setIsReferralText] = useState(false);
+  // const [isTimeText, setIsTimeText] = useState(false);
+  // const [isReferralText, setIsReferralText] = useState(false);
 
   return (
     <>

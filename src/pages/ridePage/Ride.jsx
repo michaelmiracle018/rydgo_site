@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import RideBanner from "../component/banner/ridebanner/RideBanner";
-//import RideBannerImage from "../../assets/images/Rectangle15.png";
 import "../ridePage/ride.scss";
 import HText from "../../shared/HText";
 import RedButton from "../../shared/RedButton";
@@ -24,7 +23,7 @@ import GoWrap from "../../components/Go/GoWrap";
 const Ride = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
-	const [selectedPage, setSelectedPage] = useState("Home");
+	// const [selectedPage, setSelectedPage] = useState("Home");
 
 	return (
 		<>
