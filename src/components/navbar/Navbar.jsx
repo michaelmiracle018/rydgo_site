@@ -108,7 +108,7 @@ const Navbar = () => {
 
               <li onClick={partnerNav}>Partners</li>
 
-              <Link to="/rydgotuesday">
+              <Link to="/rydgo-tuesday">
                 <li>Rydgo Tuesday</li>
               </Link>
 

@@ -1,0 +1,367 @@
+.aboutus__page-container {
+
+	overflow: hidden;
+	.aboutus__page-content {
+		// * SLIDE AND ABOUT STYLES
+
+		// *ABOUT STYLES
+		.ride__content {
+			margin-top: 150px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 150px;
+
+			@media screen and (max-width: 1006px) {
+				flex-direction: column;
+				align-items: center;
+				gap: 40px;
+				margin-top: 20px;
+			}
+			.text__content {
+				p {
+					font-family: "Inter-Light";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 24px;
+					line-height: 140.62%;
+					color: #000000;
+					width: 500px;
+
+					@media screen and (max-width: 563px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		// * END OF SLIDE AND ABOUT STYLES
+
+
+
+		// *ENGINEER STYLES
+		.engineer__content {
+			margin-top: 10px;
+			margin-bottom: 180px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 150px;
+
+			@media screen and (max-width: 1006px) {
+				flex-direction: column;
+				align-items: center;
+				gap: 40px;
+				margin-top: 20px;
+			}
+			.text__content {
+				p {
+					font-family: "Inter-Light";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 24px;
+					line-height: 140.62%;
+					color: #000000;
+					width: 500px;
+
+					@media screen and (max-width: 563px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+// END OF ENGINEER STYLING
+
+
+		// ! CAR STYLING
+		.car__image {
+			position: absolute;
+			z-index: 2;
+
+			@media screen and (max-width: 1200px) {
+				display: none;
+			}
+		}
+		.car1 {
+			bottom: 170px;
+			left: 720px;
+		}
+		.car2 {
+			bottom: 90px;
+			left: 910px;
+		}
+		.car3 {
+			bottom: 0px;
+			left: 1150px;
+		}
+
+		// ! SOCIAL IMPACT STYLES
+
+		.social__content {
+			margin-top: 150px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 150px;
+			margin-bottom: 5rem;
+			@media screen and (max-width: 1006px) {
+				flex-direction: column-reverse;
+				align-items: center;
+				gap: 40px;
+				margin-top: 60px;
+			}
+
+			.social__text-content {
+				p {
+					font-family: "Inter-Light";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 24px;
+					line-height: 140.62%;
+					color: #000000;
+					width: 500px;
+
+					@media screen and (max-width: 563px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	// ========================= RIDE CATEGORIES ===============================================
+
+	// * RIDE COMFORT STYLES 
+
+	.ride_comfort__container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-image: url("../../assets/images/Rectangle15.png");
+		background-size: cover;
+		background-attachment: fixed;
+		.ride_comfort__wrap {
+			margin: 70px 0;
+			display: flex;
+			justify-content: center;
+			align-items: 0;
+			padding: 3rem 0rem;
+			gap: 40px;
+
+			@media screen and (max-width: 1118px) {
+				flex-direction: column-reverse;
+				align-items: center;
+				padding: 1rem;
+			}
+			.ride_comfort__img {
+				@media screen and (max-width: 1118px) {
+					padding-top: 2rem;
+					padding-bottom: 1rem;
+				}
+			}
+			.ride_comfort__text {
+				margin-left: 4rem;
+				margin-top: 2rem;
+				@media screen and (max-width: 1118px) {
+					margin-top: 0.5rem;
+				}
+			}
+
+			p {
+				font-family: "Inter-Light";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 140.62%;
+				color: #fff;
+				width: 500px;
+
+				@media screen and (max-width: 563px) {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+
+	// * RIDE MAX STYLES
+
+	.ride_max__container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-image: url("../../assets/images/Rectangle15.png");
+		background-size: cover;
+		background-attachment: fixed;
+		.ride_max__wrap {
+			margin: 70px 0;
+			display: flex;
+			justify-content: center;
+			align-items: 0;
+			padding: 3rem 0rem;
+			gap: 40px;
+
+			@media screen and (max-width: 1118px) {
+				flex-direction: column-reverse;
+				align-items: center;
+				padding: 1rem;
+			}
+			.ride_max__img {
+				@media screen and (max-width: 1118px) {
+					padding-top: 2rem;
+					padding-bottom: 1rem;
+				}
+			}
+			.ride_max__text {
+				margin-left: 4rem;
+				margin-top: 2rem;
+				@media screen and (max-width: 1118px) {
+					margin-top: 0.5rem;
+				}
+			}
+
+			p {
+				font-family: "Inter-Light";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 140.62%;
+				color: #fff;
+				width: 500px;
+
+				@media screen and (max-width: 563px) {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+// ===================================== RIDE CATEGORIES ENDS ==============================================
+
+	// *OUR BLOG STYLES
+	.our__blog {
+		width: 100%;
+		height: 100%;
+		background-image: url("../../assets/images/Rectangle15.png");
+		background-size: cover;
+		background-attachment: fixed;
+		padding-top: 2rem;
+		.our__blog-content {
+			padding-top: 2rem;
+			padding-bottom: 3rem;
+			h3 {
+				font-family: "Inter-Light";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 50px;
+				line-height: 140.62%;
+				color: #ffffff;
+
+				@media screen and (max-width: 1293px) {
+					text-align: center;
+				}
+			}
+
+			
+		}
+	}
+}
+
+// * ====DRIVER CARD INFO STYLES====
+
+
+
+
+
+// * ====EXPLORE MORE CARD INFO STYLES====
+
+
+.exploreMore__card-info-container {
+	// width: var(--full-width);
+	// max-width: var(--max-width);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1em auto;
+	gap: 1em;
+
+	@media screen and (min-width: 570px) {
+		margin: 4rem 1rem auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		
+		max-width: fit-content;
+	}
+
+	@media screen and (min-width: 960px) {
+		max-width: 100%;
+		margin: 100px auto;
+		grid-template-columns: repeat(3, 1fr);
+		max-width: fit-content;
+		gap: 1em;
+	}
+
+	.single__card-info {
+		width: 360px;
+		height: 100%;
+		background-color: #fbf4f4;
+		border-radius: 1em;
+		.card__img {
+			margin-top: 2rem;
+			display: flex;
+			justify-content: center;
+			img {
+				width: 120px;
+			}
+		}
+		.card__info-text {
+			margin: 1rem 2rem;
+			text-align: center;
+
+			h4 {
+				font-style: normal;
+				font-weight: 900;
+				font-size: 22px;
+				padding-right: 5px;
+				font-family: "Inter-Bold";
+				padding-bottom: 1rem;
+				color: #000;
+			}
+			p {
+				font-style: normal;
+				font-weight: 900;
+				font-size: 16px;
+				padding-right: 5px;
+				font-family: "Inter-Light";
+				padding-bottom: 1rem;
+				color: #000;
+			}
+		}
+	}
+}
+
+// * ====EXPLORE MORE CARD INFO STYLES====
+
+
+
+// * ==== TOP QUESTIONS INFO STYLES ====
+
+.ride_questions__container {
+	width: var(--width);
+	max-width: 1280px;
+	margin: 47px auto 106px auto;
+	position: relative;
+	z-index: -1;
+
+	height: 900px;
+	overflow: hidden;
+	border-radius: 20px;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+

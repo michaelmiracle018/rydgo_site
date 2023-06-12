@@ -34,6 +34,19 @@ import RydWell from "../pages/rydwellPage/RydWell";
 import RydPharm from "../pages/rydpharmPage/RydPharm";
 import RydTour from "../pages/rydtourPage/RydTour";
 
+//PARTNER Routes Pages
+import Corporate from "../pages/corporatePage/Corporate";
+import Restaurant from "../pages/restaurantPage/Restaurant";
+import B2B from "../pages/b2bPage/B2B";
+
+//ABOUT US Routes Pages
+import AboutUs from "../pages/aboutUsPage/AboutUs";
+import SocialImpact from "../pages/socialimpactPage/SocialImpact";
+import Engineer from "../pages/engineerPage/Engineer";
+
+//Rydgo Tuesday Page
+import RydTuesday from "../pages/rydTuesdayPage/RydTuesday";
+
 const RoutesPage = () => {
   return (
     <div>
@@ -60,6 +73,16 @@ const RoutesPage = () => {
           <Route path="/rydwell" element={<RydWell />}></Route>
           <Route path="/rydpharm" element={<RydPharm />}></Route>
           <Route path="/rydtour" element={<RydTour />}></Route>
+          <Route path="/rydgo-for-business" element={<Corporate />}></Route>
+          <Route
+            path="/restaurant-partner-signup"
+            element={<Restaurant />}
+          ></Route>
+          <Route path="/rydgo-express" element={<B2B />}></Route>
+          <Route path="/about-us" element={<AboutUs />}></Route>
+          <Route path="/rydgo-social-impact" element={<SocialImpact />}></Route>
+          <Route path="/rydgo-engineer" element={<Engineer />}></Route>
+          <Route path="/rydgo-tuesday" element={<RydTuesday />}></Route>
         </Route>
       </Routes>
     </div>
