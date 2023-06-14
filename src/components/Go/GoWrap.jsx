@@ -51,8 +51,7 @@ const GoWrap = () => {
 							}`}
 							onClick={() => setCategory("taxi")}
 						>
-							Rydgo Student
-						</NavLink>
+							Rydgo Taxi						</NavLink>
 						<NavLink
 							to="/bike"
 							className={` filter__btn ${
@@ -60,16 +59,7 @@ const GoWrap = () => {
 							}`}
 							onClick={() => setCategory("bike")}
 						>
-							Rydgo Extra
-						</NavLink>
-						<NavLink
-							to="/rental"
-							className={` filter__btn ${
-								category === "rental" ? "active__btn" : ""
-							}`}
-							onClick={() => setCategory("rental")}
-						>
-							Rydgo Taxi
+							Rydgo Women
 						</NavLink>
 						<NavLink
 							to="/schoolRide"
@@ -77,6 +67,15 @@ const GoWrap = () => {
 								category === "schoolRide" ? "active__btn" : ""
 							}`}
 							onClick={() => setCategory("schoolRide")}
+						>
+							Rydgo Student
+						</NavLink>
+						<NavLink
+							to="/rental"
+							className={` filter__btn ${
+								category === "rental" ? "active__btn" : ""
+							}`}
+							onClick={() => setCategory("rental")}
 						>
 							Rydgo Rental
 						</NavLink>
