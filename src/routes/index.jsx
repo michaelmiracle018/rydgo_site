@@ -31,7 +31,7 @@ import RydDrop from "../pages/ryddropPage/RydDrop";
 import RydSparkle from "../pages/rydsparklePage/RydSparkle";
 import RydLaundry from "../pages/rydlaundryPage/RydLaundry";
 import RydWell from "../pages/rydwellPage/RydWell";
-import RydPharm from "../pages/RydpharmPage/RydPharm";
+import RydPharm from "../pages/rydpharmPage/RydPharm";
 import RydTour from "../pages/rydtourPage/RydTour";
 
 //PARTNER Routes Pages
