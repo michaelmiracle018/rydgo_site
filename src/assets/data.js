@@ -27,12 +27,18 @@ export const subLinks = [
 	{ id: "6", name: "Food", url: "/food", category: "EAT" },
 	{ id: "7", name: "RydineOut", url: "/dineOut", category: "EAT" },
 
-	{ id: "8", name: "RydGro", url: "/ride", category: "GET" },
-	{ id: "9", name: "RydSuper", url: "/ride", category: "GET" },
-	{ id: "10", name: "RydDrop", url: "/ride", category: "GET" },
-	{ id: "11", name: "RydSparkle", url: "/ride", category: "GET" },
-	{ id: "12", name: "RydLaundry", url: "/ride", category: "GET" },
-	{ id: "13", name: "RydPharm", url: "/ride", category: "GET" },
+	{ id: "8", name: "RydGro", url: "/rydgro", category: "GET" },
+	{ id: "9", name: "RydSuper", url: "/rydsuper", category: "GET" },
+	{ id: "10", name: "RydDrop", url: "ryddrop", category: "GET" },
+	{ id: "11", name: "RydSparkle", url: "/rydsparkle", category: "GET" },
+	{ id: "12", name: "RydLaundry", url: "/rydlaundry", category: "GET" },
+	{ id: "13", name: "RydPharm", url: "/rydpharm", category: "GET" },
+  { id: "14", name: "RydTour", url: "/rydtour", category: "GET" },
+
+  { id: "15", name: "RydPay", url: "/rydpay", category: "PAY" },
+	{ id: "16", name: "RydGive", url: "/rydgive", category: "PAY" },
+
+
 	// { id: "14", name: "Flowers", url: "/ride", category: "GET" },
 	// { id: "15", name: "Tickets", url: "/ride", category: "GET" },
   // { id: "1", name: "Rydgo", url: "/ride", category: "GO" },
@@ -54,8 +60,7 @@ export const subLinks = [
   // { id: "15", name: "RydTour", url: "/rydtour", category: "GET" },
 
 
-	{ id: "16", name: "RydPay", url: "/rydpay", category: "PAY" },
-	{ id: "17", name: "RydGive", url: "/rydgive", category: "PAY" },
+	
 ];
 
 export const imageLoad = [
