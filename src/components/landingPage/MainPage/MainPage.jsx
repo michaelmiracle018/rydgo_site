@@ -55,7 +55,9 @@ const MainPage = () => {
                   and build an awesome organisation that inspires. Learn more
                   about our purpose, people and services.
                 </p>
+                <Link to='/about-us'>
                 <RedButton>Read more</RedButton>
+                </Link>
               </div>
             </motion.div>
             <motion.div
@@ -146,7 +148,9 @@ const MainPage = () => {
                   five tech sites in USA and Ghana, in a mission to build a
                   lasting tech institution that inspires.
                 </p>
+                <Link to='/rydgo-engineer'>
                 <RedButton>Read more</RedButton>
+                </Link>
               </motion.div>
             </div>
             <motion.div variants={imageAnimate}>
@@ -198,7 +202,9 @@ const MainPage = () => {
                 tech sites in USA and Ghana, in a mission to build a lasting
                 tech institution that inspires.
               </p>
+              <Link to='/rydgo-social-impact'>
               <RedButton>Read more</RedButton>
+              </Link>
             </motion.div>
           </div>
         </div>
