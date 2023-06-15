@@ -298,16 +298,15 @@ const Corporate = () => {
 						</div>
 					</section>
 
-					<div className="flex justify-center items-center mx-10 my-20 mb-11">
-						<h4 className="text-4xl font-bold text-center">
-							Let one of our sales professionals <br /> connect with you!
-						</h4>
-					</div>
-
 					{/* Business Form */}
 
 					<section className="business__form-container pb-10">
 						<div className="business__form-wrap">
+							<div className=" flex justify-center items-center my-20 mb-11">
+								<h4 className="text-4xl font-bold ">
+									Let one of our sales professionals <br /> connect with you!
+								</h4>
+							</div>
 							<form onSubmit={onSubmit} className="form__container">
 								<div className="single__input-wrapper my-5">
 									<label htmlFor="Name">

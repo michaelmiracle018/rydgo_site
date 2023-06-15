@@ -156,35 +156,38 @@ img {
 	max-width: 600px;
 	margin: auto;
 	.business__form-wrap {
-
 		.form__container {
-			input[type="text"], textarea {
+			input[type="text"],
+			textarea {
 				color: #2d2e2e !important;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			appearance: none;
-			border-radius: 0.3em;
-			border: 1px solid #cecece;
-			box-sizing: border-box;
-			background-color: transparent;
-			font-size: 0.9em;
-			font-family: "Inter-Light";
-			padding: 1.1rem 0.75rem;
-			display: block;
-			width: 100%;
-			font-weight: 600;
-			line-height: 1.2em;
-			margin: 0;
-			outline: 2px solid transparent !important;
-			outline-offset: 2px !important;
-			background: #f7cdcd;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				border-radius: 0.3em;
+				border: 1px solid #cecece;
+				box-sizing: border-box;
+				background-color: transparent;
+				font-size: 0.9em;
+				font-family: "Inter-Light";
+				padding: 1.1rem 0.75rem;
+				display: block;
+				width: 100%;
+				font-weight: 600;
+				line-height: 1.2em;
+				margin: 0;
+				outline: 2px solid transparent !important;
+				outline-offset: 2px !important;
+				background: rgba(0, 0, 0, 0.06);
 
-			&::placeholder {
-				color: #fff;
-				font-size: 1rem;
-				font-weight: 700;
+				&::placeholder {
+					color: rgba(0, 0, 0, 0.2);
+					font-size: 1rem;
+					font-weight: 700;
+				}
+				&:focus {
+					border: 1px solid var(--light-red);
+				}
 			}
 		}
 	}
-}
 }
