@@ -29,7 +29,7 @@ const DriverSignUp = () => {
 									</div>
 									<h3>Be your own boss</h3>
 									<p>
-										Full time? Part time? With Careem you work on your own time.{" "}
+										Full time? Part time? With Rydgo you work on your own time.{" "}
 									</p>
 								</div>
 
@@ -133,7 +133,7 @@ const DriverSignUp = () => {
 
 					<section className="signup__container">
 						<div className="signup__card">
-							<h3>Have you got what it takes to be a Careem Captain?</h3>
+							<h3>Have you got what it takes to be a Rydgo Captain?</h3>
 
 							<div className="signup__btn">
 								<button>sign Up now</button>
@@ -157,7 +157,7 @@ const DriverSignUp = () => {
 											<h4>Register</h4>
 										</div>
 										<p className="w-[400px] ml-12">
-											Complete the form at the top and apply to become a Careem
+											Complete the form at the top and apply to become a Rydgo
 											Captain.{" "}
 										</p>
 									</div>
