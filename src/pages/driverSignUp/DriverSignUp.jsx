@@ -152,37 +152,44 @@ const DriverSignUp = () => {
 									<div className="register__text mt-1 mb-8">
 										<div className="register__text-flex flex gap-4">
 											<div className="number__text">
-												<h5 className="">1</h5>
+												<div className="">1</div>
 											</div>
-											<h4>Register</h4>
+											<div>
+												<h4>Register</h4>
+												<p className="w-[400px] ">
+													Complete the form at the top and apply to become a
+													Rydgo Captain.{" "}
+												</p>
+											</div>
 										</div>
-										<p className="w-[400px] ml-12">
-											Complete the form at the top and apply to become a Rydgo
-											Captain.{" "}
-										</p>
 									</div>
 									<div className="register__text mt-1 mb-8">
 										<div className="register__text-flex flex gap-4 ">
 											<div className="number__text">
-												<h5 className="">2</h5>
+												<div className="">2</div>
 											</div>
-											<h4>Train</h4>
+											<div>
+												<h4>Train</h4>
+												<p className="w-[400px] ">
+													After reviewing your application we’ll invite you for
+													a training session.
+												</p>
+											</div>
 										</div>
-										<p className="w-[400px] ml-12">
-											After reviewing your application we’ll invite you for a
-											training session.
-										</p>
 									</div>
 									<div className="register__text ">
 										<div className="register__text-flex flex gap-4">
 											<div className="number__text">
-												<h5 className="">3</h5>
+												<div className="">3</div>
 											</div>
-											<h4>Ride</h4>
+											<div>
+												<h4>Ride</h4>
+												<p className="w-[400px] ">
+													When training is complete, you can start to earn
+													money!
+												</p>
+											</div>
 										</div>
-										<p className="w-[400px] ml-12">
-											When training is complete, you can start to earn money!
-										</p>
 									</div>
 								</div>
 								<div className="register__step-img">

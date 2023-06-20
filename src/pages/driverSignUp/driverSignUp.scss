@@ -1,4 +1,5 @@
 .driver__signup-nav {
+	// overflow: hidden;
 	.driver__signup-sub {
 		.captain__container {
 			width: 95%;
@@ -41,6 +42,7 @@
 							font-family: "Inter-Light";
 							font-size: 1rem;
 							text-align: center;
+							width: 100%;
 						}
 					}
 				}
@@ -210,10 +212,10 @@
 
 		// * REGISTER STEP CONTENT
 		.register__step-container {
+
 			width: 95%;
 			max-width: 1100px;
-			margin: auto;
-			margin-bottom: 4rem;
+			margin: 0 auto 4rem auto;
 			.header__text {
 				margin-top: 4rem;
 				font-style: normal;
@@ -227,16 +229,19 @@
 			.register__content {
 				.register__text-flex {
 					.number__text {
-						background-color: #e6eaed;
-						width: 30px;
-						height: 30px;
-						border-radius: 50%;
-						h5 {
+						div {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							background-color: #e6eaed;
+							width: 30px;
+							height: 30px;
+							border-radius: 50%;
 							font-style: normal;
 							font-weight: 600;
 							font-size: 16px;
 							font-family: "Inter-Light";
-							text-align: center;
+							// text-align: center;
 							margin-top: 0.2rem;
 						}
 					}
@@ -254,8 +259,10 @@
 					font-style: normal;
 					font-weight: 400;
 					font-size: 18px;
-					line-height: 140.62%;
+					// line-height: 140.62%;
 					color: #000;
+					width: 100%;
+					// margin-left: 1rem;
 				}
 
 				.register__step-img {
