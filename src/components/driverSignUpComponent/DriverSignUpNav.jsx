@@ -35,17 +35,17 @@ const DriverSignUpNav = () => {
 		setIsOpen(false);
 	};
 
+	
+
 	useEffect(() => {
 		const linksHeight = linksRef.current.getBoundingClientRect().height;
-		const smLinksHeight = subLinksRef.current.getBoundingClientRect().height;
-		const totalHeight = smLinksHeight + linksHeight;
-
 		if (showLinks) {
-			linksContainerRef.current.style.height = `240px  `;
+			linksContainerRef.current.style.height = `235px`;
 		} else {
 			linksContainerRef.current.style.height = "0px";
 		}
 	}, [showLinks]);
+
 	return (
 		<>
 			<main className="driver__nav-container">
@@ -64,8 +64,8 @@ const DriverSignUpNav = () => {
 
 							<div className="links-container" ref={linksContainerRef}>
 								<ul className="links" ref={linksRef}>
-									<li className="link" ref={subLinksRef}>
-										<div className="flex gap-1">
+									<li className="link">
+										<div className="flex gap-1" ref={subLinksRef}>
 											<h5>Discover</h5>
 											<div className="mt-0">
 												<RiArrowDownSFill />
@@ -77,7 +77,7 @@ const DriverSignUpNav = () => {
 											<li>Fair estimator</li>
 										</ul>
 									</li>
-									<li className="link" ref={subLinksRef}>
+									<li className="link">
 										<div className="flex gap-1">
 											<h5>Ride</h5>
 											<div className="mt-0">

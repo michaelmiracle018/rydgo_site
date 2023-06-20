@@ -441,6 +441,8 @@ const Restaurant = () => {
 										<p className="mt-1 text-red-600">
 											{errors.outlets.type === "required" &&
 												"Number of Outlets is required."}
+						
+						
 										</p>
 									)}
 								</div>{" "}
@@ -462,3 +464,9 @@ const Restaurant = () => {
 };
 
 export default Restaurant;
+
+
+
+
+
+

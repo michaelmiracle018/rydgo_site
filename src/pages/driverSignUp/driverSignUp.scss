@@ -1,6 +1,9 @@
 .driver__signup-nav {
 	.driver__signup-sub {
 		.captain__container {
+			width: 95%;
+			max-width: 1110px;
+			margin: auto;
 			.captain__sub-container {
 				h2 {
 					border-radius: 4px;
@@ -9,22 +12,251 @@
 					font-weight: 600;
 					font-size: clamp(2rem, 2.5vw, 6rem);
 					font-family: "Inter-Bold";
-				line-height: 130.62%;
-
-					margin-top: 1rem;
+					line-height: 130.62%;
+					text-align: center;
+					margin: 3rem 0;
 				}
+
 				.captain__card-content {
 					display: grid;
 					grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+					place-items: center;
+					place-self: center;
+					gap: 3rem;
+					.img__card {
+						display: flex;
+						justify-content: center;
+					}
+					.captain__single-card {
+						h3 {
+							font-style: normal;
+							font-weight: 600;
+							font-size: clamp(1rem, 2.5vw, 1.3rem);
+							font-family: "Inter-Bold";
+							line-height: 130.62%;
+							text-align: center;
+						}
+
+						p {
+							font-family: "Inter-Light";
+							font-size: 1rem;
+							text-align: center;
+						}
+					}
 				}
 			}
 		}
 
-		// ! DRIVER LEFT CONTENT
-		// ! DRIVER LEFT CONTENT
-		// ! DRIVER LEFT CONTENT
-		// ! DRIVER LEFT CONTENT
-		// ! DRIVER LEFT CONTENT
-		// ! DRIVER LEFT CONTENT
+		// ! REQUIREMENT  CONTENT
+		.requirement__container {
+			margin-top: 4rem;
+			.requirement__sub-container {
+				.road__img {
+					img {
+						position: relative;
+						object-fit: contain;
+						width: 100%;
+					}
+
+					.requirement__card-content {
+						width: 95%;
+						max-width: 1110px;
+						margin: auto;
+						height: 100%;
+						// box-shadow: 0 4px 8px 0 rgba(82, 97, 115, 0.18);
+						border-radius: 8px;
+						background-color: #fff;
+						position: relative;
+						top: -100px;
+						.requirement__card {
+							h2 {
+								font-style: normal;
+								font-weight: 600;
+								font-size: clamp(1rem, 2.5vw, 2.3rem);
+								font-family: "Inter-Bold";
+								line-height: 130.62%;
+								text-align: center;
+								padding-top: 3rem;
+							}
+
+							.first__requirement {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								gap: 4rem;
+								padding: 3rem 4rem;
+
+								@media screen and (max-width: 800px) {
+									flex-direction: column;
+								}
+
+								.icon {
+									font-size: 3rem;
+									color: var(--light-red);
+								}
+
+								.requirement__text {
+									width: 350px;
+									h3 {
+										font-family: "Inter-Light";
+										font-style: normal;
+										font-weight: 600;
+										font-size: 30px;
+										line-height: 140.62%;
+										color: #000;
+										margin-bottom: 0.5rem;
+									}
+
+									p {
+										font-family: "Inter-Light";
+										font-style: normal;
+										font-weight: 400;
+										font-size: 18px;
+										line-height: 140.62%;
+										color: #000;
+									}
+								}
+							}
+
+							.second__requirement {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								gap: 4rem;
+								padding: 3rem 4rem;
+								@media screen and (max-width: 800px) {
+									flex-direction: column;
+								}
+
+								.icon {
+									font-size: 3rem;
+									color: var(--light-red);
+								}
+
+								.requirement__text {
+									width: 350px;
+									h3 {
+										font-family: "Inter-Light";
+										font-style: normal;
+										font-weight: 600;
+										font-size: 30px;
+										line-height: 140.62%;
+										color: #000;
+										margin-bottom: 0.5rem;
+									}
+
+									p {
+										font-family: "Inter-Light";
+										font-style: normal;
+										font-weight: 400;
+										font-size: 18px;
+										line-height: 140.62%;
+										color: #000;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		// !END OF REQUIREMENT  CONTENT
+
+		// * SIGN UP CONTENT
+		.signup__container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #f5f5f5;
+			padding: 5rem 0;
+
+			.signup__card {
+				h3 {
+					font-style: normal;
+					font-weight: 500;
+					font-size: clamp(1rem, 2.5vw, 2rem);
+					font-family: "Inter-Bold";
+					line-height: 130.62%;
+					text-align: center;
+				}
+				.signup__btn {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					button {
+						width: 350px;
+						color: #fff;
+						background-color: var(--light-red);
+						border-radius: 4px;
+						box-shadow: none;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 20px;
+						font-family: "Inter-Light";
+						margin-top: 1rem;
+						padding: 10px;
+					}
+				}
+			}
+		}
+		// * SIGN UP CONTENT
+
+		// * REGISTER STEP CONTENT
+		.register__step-container {
+			width: 95%;
+			max-width: 1100px;
+			margin: auto;
+			margin-bottom: 4rem;
+			.header__text {
+				margin-top: 4rem;
+				font-style: normal;
+				font-weight: 500;
+				font-size: clamp(1rem, 2.5vw, 2rem);
+				font-family: "Inter-Bold";
+				line-height: 130.62%;
+				// text-align: center;
+			}
+
+			.register__content {
+				.register__text-flex {
+					.number__text {
+						background-color: #e6eaed;
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						h5 {
+							font-style: normal;
+							font-weight: 600;
+							font-size: 16px;
+							font-family: "Inter-Light";
+							text-align: center;
+							margin-top: 0.2rem;
+						}
+					}
+					h4 {
+						font-style: normal;
+						font-weight: 600;
+						font-size: 16px;
+						font-family: "Inter-Bold";
+						// text-align: center;
+					}
+				}
+
+				p {
+					font-family: "Inter-Light";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 140.62%;
+					color: #000;
+				}
+
+				.register__step-img {
+					object-fit: contain;
+					// width: 100%;
+				}
+			}
+			// * REGISTER STEP CONTENT
+		}
 	}
 }
