@@ -25,7 +25,7 @@ const RydTuesday = () => {
       <RydTuesdayBanner />
 
       <div className="flex flex-col justify-center items-center my-20 mx-10">
-        <h4 className="text-5xl font-bold text-center">
+        <h4 className="text-xl sm:text-4xl font-bold text-center ">
           Most members save Gh200+ cedis monthly <br /> with Rydgo Tuesday
         </h4>
         <small className="text-xl mt-2 text-[#ff0000]">

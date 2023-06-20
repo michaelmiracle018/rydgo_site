@@ -86,7 +86,9 @@ img {
 	font-family: "Inter-Light";
 	font-style: normal;
 	font-weight: 700;
-	font-size: 50px;
+	// font-size: 50px;
+	font-size: clamp(1.5rem, 2.5vw, 6rem);
+
 	line-height: 130.62%;
 	color: #000000;
 }
@@ -131,8 +133,9 @@ img {
 	font-family: "Inter-Light";
 	font-style: normal;
 	font-weight: 700;
-	font-size: 50px;
-	line-height: 140.62%;
+	// font-size: 50px;
+	font-size: clamp(1.5rem, 2.5vw, 6rem);
+	// line-height: 140.62%;
 	color: #ffffff;
 }
 

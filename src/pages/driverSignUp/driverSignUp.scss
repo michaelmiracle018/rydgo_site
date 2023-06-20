@@ -97,6 +97,10 @@
 
 								.requirement__text {
 									width: 350px;
+
+									@media screen and (max-width: 450px) {
+										width: 100%;
+									}
 									h3 {
 										font-family: "Inter-Light";
 										font-style: normal;
@@ -135,6 +139,9 @@
 
 								.requirement__text {
 									width: 350px;
+									@media screen and (max-width: 450px) {
+										width: 100%;
+									}
 									h3 {
 										font-family: "Inter-Light";
 										font-style: normal;
