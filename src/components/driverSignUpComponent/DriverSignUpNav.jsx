@@ -51,13 +51,11 @@ const DriverSignUpNav = () => {
 				return response.json();
 			})
 			.then((data) => {
-				console.log(data);
-				const code = data?.countryCode.toLowerCase()
-				console.log(code);
+				const code = data?.countryCode?.toLowerCase();
 				setCountryCode(code);
 			});
-		}, []);
-		console.log(countryCode);
+	}, []);
+	console.log(countryCode);
 
 	return (
 		<>
@@ -150,7 +148,6 @@ const DriverSignUpNav = () => {
 											containerClass="containerClass"
 											buttonClass="buttonClass"
 											inputClass="inputClass"
-
 											containerStyle={{
 												border: "0px",
 											}}

@@ -22,9 +22,7 @@ const Footer = () => {
 				return response.json();
 			})
 			.then((data) => {
-				console.log(data);
 				const country = data?.countryName;
-				// console.log(code);
 				setCountryName(country);
 			});
 	}, []);
@@ -109,7 +107,7 @@ const Footer = () => {
 						<span className="left__icon">
 							<CiLocationOn />
 						</span>
-						<span>{countryName }</span>
+						<span>{countryName}</span>
 						<span className="right__icon">
 							<FaChevronDown />
 						</span>

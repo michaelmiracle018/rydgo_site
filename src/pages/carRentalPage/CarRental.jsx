@@ -18,6 +18,8 @@ import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
 import GoWrap from "../../components/Go/GoWrap";
 
+import QuestionPage from "../../components/QuestionPage"
+
 const CarRental = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
@@ -229,21 +231,7 @@ and have it delivered straight to <br /> your door.
 
 					{/* MOST ASKED QUESTIONS */}
 					<section className="ridebanner__container">
-						<div>
-							<img
-								src={CarRentalBannerImage}
-								alt="rideImage"
-								width={500}
-								height={900}
-								className="absolute"
-							/>
-
-							<div className="text relative pt-10">
-								<h3 className="text-3xl text-white font-bold flex justify-center items-center">
-									Most asked questions
-								</h3>
-							</div>
-						</div>
+						<QuestionPage />
 					</section>
 				</div>
 			</section>
