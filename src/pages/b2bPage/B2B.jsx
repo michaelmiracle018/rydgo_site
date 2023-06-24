@@ -75,8 +75,8 @@ const B2B = () => {
 						<div>
 							<h4>Reliable delivery riders</h4>
 							<p>
-								Careem’s advanced mapping and dispatching tech finds the
-								fastest, cheapest route for you.
+								Rydgo’s advanced mapping and dispatching tech finds the fastest,
+								cheapest route for you.
 							</p>
 						</div>
 					</div>

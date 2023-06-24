@@ -120,7 +120,7 @@ and have it delivered straight to <br /> your door.
 									<p className="py-6">
 										What’s the easiest way to enjoy all the perks of having a
 										car without actually owning one? Rent a car the smarter way
-										with Careem. You’ll love the flexibility, ease, and
+										with Rydgo. You’ll love the flexibility, ease, and
 										convenience a monthly car rental can give you.
 									</p>
 									<RedButton>Rent now</RedButton>

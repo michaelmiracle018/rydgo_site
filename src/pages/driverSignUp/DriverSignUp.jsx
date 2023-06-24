@@ -10,6 +10,7 @@ import { SlCalender } from "react-icons/sl";
 import { MdPhoneAndroid } from "react-icons/md";
 import { BsPersonCheck } from "react-icons/bs";
 import driverImg from "../../assets/images/driver_signup.jpg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const DriverSignUp = () => {
 	return (
@@ -136,7 +137,10 @@ const DriverSignUp = () => {
 							<h3>Have you got what it takes to be a Rydgo Captain?</h3>
 
 							<div className="signup__btn">
-								<button>sign Up now</button>
+								<AnchorLink href={"#signUp"}>
+
+									<button>sign Up now</button>
+								</AnchorLink>
 							</div>
 						</div>
 					</section>

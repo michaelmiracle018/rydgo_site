@@ -15,7 +15,7 @@ const DineBanner = () => {
         />
 
         <div className="text relative pt-28 pl-40">
-          <h3 className="text-6xl text-white italic font-bold flex justify-start">
+          <h3 className="text-5xl text-white italic font-bold flex justify-start">
             Discover, <br /> Ghana's finest
             <br />
             Restaurant

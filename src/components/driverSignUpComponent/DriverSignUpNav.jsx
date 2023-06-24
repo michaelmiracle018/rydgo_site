@@ -35,8 +35,6 @@ const DriverSignUpNav = () => {
 		setIsOpen(false);
 	};
 
-	
-
 	useEffect(() => {
 		const linksHeight = linksRef.current.getBoundingClientRect().height;
 		if (showLinks) {
@@ -45,6 +43,16 @@ const DriverSignUpNav = () => {
 			linksContainerRef.current.style.height = "0px";
 		}
 	}, [showLinks]);
+
+	useEffect(() => {
+		fetch("https://api.ipregistry.co/?key=tryout")
+			.then(function (response) {
+				return response.json();
+			})
+			.then((country) => {
+				console.log({country});
+			});
+	}, []);
 
 	return (
 		<>
@@ -108,7 +116,7 @@ const DriverSignUpNav = () => {
 
 				{/* TEXT AND SIGN UP CARD CONTENT   */}
 
-				<section className="card__signup-container">
+				<section className="card__signup-container" id="signUp">
 					<div className="driver__signup-text">
 						<h3>Your time. Your day.</h3>
 						<h3>Your life.</h3>
