@@ -52,7 +52,13 @@
 				@media screen and (max-width: 1170px) {
 					text-align: center;
 				}
+				&:hover {
+					color: rgb(243, 65, 65);
+				}
 			}
+			a:hover {
+					color: rgb(243, 65, 65);
+				}
 		}
 		// }
 		// * =======RIGHT FOOTER CONTENT======
@@ -66,12 +72,17 @@
 				font-weight: 500;
 				font-size: 16px;
 				cursor: pointer;
+				&:hover {
+					color: rgb(243, 65, 65);
+				}
 				.left__icon {
 					margin-right: 0.7rem;
 					margin-top: 0.2rem;
 				}
 				.right__icon {
 					margin-left: 0.5rem;
+					margin-top: 0.2rem;
+
 				}
 			}
 		}

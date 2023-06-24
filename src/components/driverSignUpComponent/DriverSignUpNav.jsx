@@ -18,6 +18,7 @@ const DriverSignUpNav = () => {
 	const [userData, setUserData] = useState({
 		phoneNumber: "",
 	});
+	const [countryCode, setCountryCode] = useState("");
 
 	const handlePhoneInput = (value, country) => {
 		setUserData({
@@ -45,14 +46,18 @@ const DriverSignUpNav = () => {
 	}, [showLinks]);
 
 	useEffect(() => {
-		fetch("https://api.ipregistry.co/?key=tryout")
+		fetch("https://api.db-ip.com/v2/free/self")
 			.then(function (response) {
 				return response.json();
 			})
-			.then((country) => {
-				console.log({country});
+			.then((data) => {
+				console.log(data);
+				const code = data?.countryCode.toLowerCase()
+				console.log(code);
+				setCountryCode(code);
 			});
-	}, []);
+		}, []);
+		console.log(countryCode);
 
 	return (
 		<>
@@ -140,12 +145,12 @@ const DriverSignUpNav = () => {
 											}}
 											enableSearch="false"
 											disableSearchIcon="false"
-											country={"gh"}
+											country={`${countryCode}`}
 											value={userData.phoneNumber}
 											containerClass="containerClass"
 											buttonClass="buttonClass"
 											inputClass="inputClass"
-											regions={"africa"}
+
 											containerStyle={{
 												border: "0px",
 											}}

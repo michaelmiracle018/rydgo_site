@@ -11,6 +11,7 @@ import facebook from "../../assets/images/facebook.png";
 import instagram from "../../assets/images/instagram.png";
 import linkedin from "../../assets/images/linkedin.png";
 import twitter from "../../assets/images/twitter.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -30,10 +31,18 @@ const Footer = () => {
 				<div className="footer__services">
 					<h3>Services</h3>
 					<ul>
-						<li>Go</li>
-						<li>Eat</li>
-						<li>Get</li>
-						<li>Pay</li>
+						<Link to="/food">
+							<li>Go</li>
+						</Link>
+						<Link to="/rydgro">
+							<li>Eat</li>
+						</Link>
+						<Link to="/bike">
+							<li>Get</li>
+						</Link>
+						<Link to="/rydpay">
+							<li>Pay</li>
+						</Link>
 						<li>Rydgo Plus</li>
 					</ul>
 				</div>
@@ -41,18 +50,28 @@ const Footer = () => {
 				<div className="footer__partners">
 					<h3>Partners</h3>
 					<ul>
-						<li>Cooperate packages</li>
-						<li>Restaurant delivery</li>
-						<li>B2B delivery</li>
-						<li>Pay merchant solutions</li>
+						<Link to="/rydgo-for-business">
+							<li>Cooperate packages</li>
+						</Link>
+						<Link to="/restaurant-partner-signup">
+							<li>Restaurant delivery</li>
+						</Link>
+						<Link to="/rydgo-express">
+							<li>B2B delivery</li>
+						</Link>
+						{/*<li>Pay merchant solutions</li>*/}
 					</ul>
 				</div>
 
 				<div className="footer__join-us">
 					<h3>Join our team</h3>
 					<ul>
-						<li>About us</li>
-						<li>engineering at Rydgo</li>
+						<Link to="/about-us">
+							<li>About us</li>
+						</Link>
+						<Link to="/rydgo-engineer">
+							<li>engineering at Rydgo</li>
+						</Link>
 						<li>Careers</li>
 						<li>Explore open roles</li>
 					</ul>
@@ -61,7 +80,9 @@ const Footer = () => {
 				<div className="footer__about-us">
 					<h3>About us</h3>
 					<ul>
-						<li>Our social impact</li>
+						<Link to="/rydgo-social-impact">
+							<li>Our social impact</li>
+						</Link>
 						<li>Information security</li>
 						<li>Blog</li>
 					</ul>

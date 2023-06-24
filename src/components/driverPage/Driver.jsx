@@ -66,7 +66,7 @@ const Driver = () => {
 					</div>
 				</section>
 
-				<section className="driver__card-info-containe">
+				<section className="driver__card-info-container">
 					{/* DRIVER CARD CONTENT */}
 
 					<div className="single__card-info">
