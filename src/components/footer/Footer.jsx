@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import rydgo_logo from "../../assets/images/rydgo_logo(1).png";
 import apple_img from "../../assets/images/app-store.webp";
 import google_play from "../../assets/images/google-play.webp";
@@ -14,6 +14,21 @@ import twitter from "../../assets/images/twitter.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+	const [countryName, setCountryName] = useState("");
+
+	useEffect(() => {
+		fetch("https://api.db-ip.com/v2/free/self")
+			.then(function (response) {
+				return response.json();
+			})
+			.then((data) => {
+				console.log(data);
+				const country = data?.countryName;
+				// console.log(code);
+				setCountryName(country);
+			});
+	}, []);
+
 	return (
 		<section className="footer__container">
 			<div className="footer__wrapper py-10">
@@ -94,7 +109,7 @@ const Footer = () => {
 						<span className="left__icon">
 							<CiLocationOn />
 						</span>
-						<span>Ghana</span>
+						<span>{countryName }</span>
 						<span className="right__icon">
 							<FaChevronDown />
 						</span>
