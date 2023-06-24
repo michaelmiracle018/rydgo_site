@@ -42,8 +42,6 @@
 
 		// * END OF SLIDE AND ABOUT STYLES
 
-
-
 		// *ENGINEER STYLES
 		.engineer__content {
 			margin-top: 10px;
@@ -76,8 +74,7 @@
 			}
 		}
 
-// END OF ENGINEER STYLING
-
+		// END OF ENGINEER STYLING
 
 		// ! CAR STYLING
 		.car__image {
@@ -137,7 +134,7 @@
 
 	// ========================= RIDE CATEGORIES ===============================================
 
-	// * RIDE COMFORT STYLES 
+	// * RIDE COMFORT STYLES
 
 	.ride_comfort__container {
 		position: relative;
@@ -168,8 +165,12 @@
 			.ride_comfort__text {
 				margin-left: 4rem;
 				margin-top: 2rem;
+
 				@media screen and (max-width: 1118px) {
 					margin-top: 0.5rem;
+				}
+				@media screen and (max-width: 400px) {
+					margin-left: 0rem;
 				}
 			}
 
@@ -188,7 +189,6 @@
 			}
 		}
 	}
-
 
 	// * RIDE MAX STYLES
 
@@ -242,7 +242,7 @@
 		}
 	}
 
-// ===================================== RIDE CATEGORIES ENDS ==============================================
+	// ===================================== RIDE CATEGORIES ENDS ==============================================
 
 	// *OUR BLOG STYLES
 	.our__blog {
@@ -267,27 +267,17 @@
 					text-align: center;
 				}
 			}
-
-			
 		}
 	}
 }
 
 // * ====DRIVER CARD INFO STYLES====
 
-
-
 // * ====END OF DRIVER CARD INFO STYLES====
 
-
-
 // * ====EXPLORE MORE CARD INFO STYLES====
 
-
-
 // * ====EXPLORE MORE CARD INFO STYLES====
-
-
 
 // * ==== TOP QUESTIONS INFO STYLES ====
 
@@ -307,4 +297,3 @@
 		object-fit: cover;
 	}
 }
-

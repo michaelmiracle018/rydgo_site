@@ -16,6 +16,7 @@ import { imageAnimate } from "../../animations";
 import cash from "../../assets/icons/CARD.png";
 import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
+import QuestionPage from "../../components/QuestionPage"
 
 const Food = () => {
   const [isTimeText, setIsTimeText] = useState(false);
@@ -137,7 +138,7 @@ const Food = () => {
           {/* EXPLORE MORE WITH RYDGO CONTENT */}
 
           <div className="flex justify-center items-center mt-40 mx-10">
-            <h4 className="text-5xl font-bold">Explore more with Rydgo</h4>
+            <h4 className="text-4xl sm:text-5xl font-bold">Explore more with Rydgo</h4>
           </div>
 
           <section className="exploreMore__card-info-container">
@@ -223,21 +224,7 @@ const Food = () => {
 
           {/* MOST ASKED QUESTIONS */}
           <section className="ridebanner__container">
-            <div>
-              <img
-                src={FoodBannerImage}
-                alt="rideImage"
-                width={500}
-                height={900}
-                className="absolute"
-              />
-
-              <div className="text relative pt-10">
-                <h3 className="text-3xl text-white font-bold flex justify-center items-center">
-                  Most asked questions
-                </h3>
-              </div>
-            </div>
+           <QuestionPage />
           </section>
         </div>
       </section>
