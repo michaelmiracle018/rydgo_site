@@ -223,7 +223,7 @@ const Food = () => {
           </section>
 
           {/* MOST ASKED QUESTIONS */}
-          <section className="ridebanner__container">
+          <section >
            <QuestionPage />
           </section>
         </div>

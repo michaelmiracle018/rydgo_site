@@ -230,7 +230,7 @@ and have it delivered straight to <br /> your door.
 					</section>
 
 					{/* MOST ASKED QUESTIONS */}
-					<section className="ridebanner__container">
+					<section >
 						<QuestionPage />
 					</section>
 				</div>
