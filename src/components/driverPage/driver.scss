@@ -127,3 +127,14 @@
 
 	// * ====END OF QUESTIONs STYLES====
 }
+.header__shrink {
+	position: sticky;
+right: 0;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 99999;
+	// box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.15);
+
+}

@@ -56,7 +56,9 @@ const Footer = () => {
 						<Link to="/rydpay">
 							<li>Pay</li>
 						</Link>
-						<li>Rydgo Plus</li>
+						<Link to="/rydgo-tuesday">
+						<li>Rydgo Tuesday</li>
+						</Link>
 					</ul>
 				</div>
 
