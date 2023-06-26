@@ -18,9 +18,21 @@ import blogs from "../../../assets/blogs";
 import { Link } from "react-router-dom";
 
 const container = {
-  hidden: {},
   visible: {
-    transition: { staggerChildren: 0.2 },
+    opacity: 1,
+    y: -20,
+    transition: {
+      when: 'beforeChildren',
+      staggerChildren: 0.2,
+      delay: 0.3,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    x: 1,
+    transition: {
+      when: 'afterChildren',
+    },
   },
 };
 
@@ -213,17 +225,13 @@ const MainPage = () => {
           <div className="our__blog-content center__item">
             <h3>Our Blog</h3>
 
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.7 }}
-              variants={container}
+            <div
               className="blog__cards"
             >
               {blogs.map((blog) => (
                 <Blog key={blog.id} blog={blog} />
               ))}
-            </motion.div>
+            </div>
           </div>
         </section>
       </div>

@@ -13,7 +13,7 @@ const childVariant = {
 const Blog = ({ blog }) => {
 	return (
 		<div>
-			<motion.div variants={childVariant}>
+
 				<section>
 					<div className="single__card-blog">
 						<img src={blog.image} alt="" />
@@ -23,7 +23,7 @@ const Blog = ({ blog }) => {
 						<WhiteButton>Read more</WhiteButton>
 					</div>
 				</section>
-			</motion.div>
+
 		</div>
 	);
 };

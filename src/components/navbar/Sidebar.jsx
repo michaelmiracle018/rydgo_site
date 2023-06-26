@@ -48,20 +48,20 @@ const Sidebar = ({ setIsOpen, isOpen }) => {
 								<div>
 									<ul className="sub__links">
 										<li>
-											<Link to="/">Corporate Packages</Link>
+											<Link to="/rydgo-for-business">Corporate Packages</Link>
 										</li>
 										<li>
-											<Link to="/">Restaurant Delivery</Link>
+											<Link to="/restaurant-partner-signup">Restaurant Delivery</Link>
 										</li>
 										<li>
-											<Link to="/">B2B Delivery</Link>
+											<Link to="/rydgo-express">B2B Delivery</Link>
 										</li>
 									</ul>
 								</div>
 							)}
 						</li>
 						<li>
-							<div className="link__flex">Rydgo Tuesday</div>
+							<Link to="/rydgo-tuesday" className="link__flex">Rydgo Tuesday</Link>
 						</li>
 						<li>
 							<div
@@ -75,17 +75,19 @@ const Sidebar = ({ setIsOpen, isOpen }) => {
 								<div>
 									<ul className="sub__links">
 										<li>
-											<Link to="/">About Us</Link>
+											<Link to="/about-us">About Us</Link>
 										</li>
 										<li>
-											<Link to="/">Our Social Impact</Link>
+											<Link to="/rydgo-social-impact">Our Social Impact</Link>
 										</li>
 										<li>
-											<Link to="/">Engineering at Rydgo</Link>
+											<Link to="/rydgo-engineer">Engineering at Rydgo</Link>
 										</li>
+										{/* 
 										<li>
-											<Link to="/">Careers</Link>
+										<Link to="/">Careers</Link>
 										</li>
+									*/}
 									</ul>
 								</div>
 							)}
