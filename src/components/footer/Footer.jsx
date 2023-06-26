@@ -145,10 +145,18 @@ const Footer = () => {
 					<h4>Privacy Policy</h4>
 				</div>
 				<div className="flex gap-3 footer__social-icons">
-					<img src={facebook} alt="" />
-					<img src={twitter} alt="" />
-					<img src={linkedin} alt="" />
-					<img src={instagram} alt="" />
+				<a target="_blank" href="https://m.facebook.com/story.php?story_fbid=pfbid02yxxo6q75g4qz1wvbLS8tsTTf7GysuKxzGx1meoFybyE6ptfL3rZk8KgCXXTQKRD2l&id=100089560879268&mibextid=Nif5oz">
+				<img src={facebook} alt="" />
+				</a>
+				<a href="">
+				<img src={twitter} alt="" />
+				</a>
+				<a target="_blank" href="https://www.linkedin.com/posts/rydgo-technologies-ltd_rydgoapp-rydgo4you-ridewithrydgo-activity-7056191686959370241-Z0EA?utm_source=share&utm_medium=member_android">
+				<img src={linkedin} alt="" />
+				</a>
+				<a target="_blank" href="https://www.instagram.com/p/Crab8K_IumQ/?igshid=MDJmNzVkMjY=">
+				<img src={instagram} alt="" />
+				</a>
 				</div>
 			</div>
 		</section>
