@@ -14,8 +14,8 @@ const RydSparkleBanner = () => {
           className="absolute"
         />
 
-        <div className="text relative pt-28 pl-40 flex flex-col">
-          <h3 className="text-6xl text-white italic font-bold flex justify-start">
+        <div className="text relative pt-28 pl-10 sm:pl-40 flex flex-col">
+          <h3 className="text-4xl sm:text-6xl text-white italic font-bold flex justify-start">
             Home Cleaning, <br /> with a tap.
           </h3>
           {/* <small className="text-2xl mt-2 text-white">

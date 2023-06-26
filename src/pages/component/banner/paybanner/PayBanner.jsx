@@ -14,8 +14,8 @@ const PayBanner = () => {
           className="absolute"
         />
 
-        <div className="text relative pt-28 pl-40">
-          <h3 className="text-6xl text-white italic font-bold flex justify-start">
+        <div className="text relative pt-28 pl-10 sm:pl-40">
+          <h3 className="text-4xl sm:text-6xl text-white italic font-bold flex justify-start">
             Ride, Payment, <br /> Simple
           </h3>
 
