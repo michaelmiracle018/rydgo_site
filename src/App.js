@@ -8,6 +8,15 @@ import DriverSignUpNav from "./components/driverSignUpComponent/DriverSignUpNav"
 
 const App = () => {
 	const [showNav, setShowNav] = useState(false);
+	const [showTopBtn, setShowTopBtn] = useState(false);
+
+	const goToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
+	
 
 	const path = useLocation().pathname;
 	const driverPath = path?.substring(1);
@@ -16,6 +25,18 @@ const App = () => {
 		if (driverPath === "driverSignUp") {
 			setShowNav(true);
 		}
+	}, [path]);
+
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+			if (window.scrollY > 100) {
+				setShowTopBtn(true);
+			} else {
+				setShowTopBtn(false);
+			}
+		});
+		goToTop()
+		return () => window.addEventListener("scroll", null);
 	}, [path]);
 
 	return (

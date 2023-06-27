@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import RideBanner from "../component/banner/ridebanner/RideBanner";
 import "../ridePage/ride.scss";
 import HText from "../../shared/HText";
@@ -23,7 +23,8 @@ import GoWrap from "../../components/Go/GoWrap";
 const Ride = () => {
 	const [isTimeText, setIsTimeText] = useState(false);
 	const [isReferralText, setIsReferralText] = useState(false);
-	// const [selectedPage, setSelectedPage] = useState("Home");
+	const [showTopBtn, setShowTopBtn] = useState(false);
+	
 
 	return (
 		<>

@@ -16,6 +16,9 @@ import icons from "../../assets/images/ICONs-01.png";
 import relax from "../../assets/images/RELAX.png";
 
 const RidersPage = () => {
+
+
+	
 	return (
 		<>
 			<section className="relative bg-[url(bg-hd.png)] bg-cover bg-center bg-no-repeat z-[-1]">
@@ -47,7 +50,7 @@ const RidersPage = () => {
 				</div>
 			</section>
 
-			<div className="w-full py-[10rem] px-4 bg-white">
+			<div className="w-full pt-[2rem] pb-14 px-4 bg-white">
 				<h1 className="text-3xl font-bold text-center py-8">
 					{" "}
 					Your SAFETY before, during and after the ride is our priority.
@@ -87,7 +90,7 @@ const RidersPage = () => {
 				</div>
 			</div>
 
-			<div className="w-full py-[10rem] px-4 bg-white">
+			<div className="w-full pt-[1rem] pb-14 px-4 bg-white">
 				<div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8">
 					<div className="w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300">
 						<img
@@ -127,84 +130,84 @@ const RidersPage = () => {
 			</div>
 
 			<div className="container px-6 py-4 mx-auto grid gap-6 mb-8 md:grid-cols-2 lg:grid-cols-2">
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 hover:bg-red-400 transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4 text-white rounded-full">
 						<img src={alarm} alt="" style={{ width: "300px" }} />
 					</div>
 					<div>
-						<p className="mb-2 text-xl font-medium text-gray-900">
+						<p className="mb-2 text-xl font-medium text-white">
 							Emergency Assist
 						</p>
-						<p className="text-sm font-bold text-gray-800">
+						<p className="text-sm font-bold text-white">
 							Our in-app Emergency Assist button alerts an emergency response
 							teamswiftly and consciously. This will also notify our safety
 							team, who will makean immediate safety call.
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 hover:bg-red-400 transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4 text-white rounded-full">
 						<img src={numbers} alt="" style={{ width: "150px" }} />
 					</div>
 					<div>
-						<p className="mb-2 text-xl  font-medium text-gray-900">
+						<p className="mb-2 text-xl  font-medium text-white">
 							Your Number Stays Private
 						</p>
-						<p className="text-sm font-bold text-gray-800">
+						<p className="text-sm font-bold text-white">
 							When you make a call via the Rydgo app, your phone number remains
 							hidden.
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 hover:bg-red-400 transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4 text-white rounded-full">
 						<img src={review} alt="" style={{ width: "150px" }} />
 					</div>
 					<div>
-						<p className="mb-2 text-xl  font-medium text-gray-900">
+						<p className="mb-2 text-xl  font-medium text-white">
 							Unique Review System
 						</p>
-						<p className="text-sm font-bold text-gray-800">
+						<p className="text-sm font-bold text-white">
 							Rapid responds to clients comments, recommendations and feedback
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 hover:bg-red-400 transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4 text-white rounded-full">
 						<img src={promo} alt="" style={{ width: "250px" }} />
 					</div>
 					<div>
-						<p className="mb-2 text-xl  font-medium text-gray-900">
+						<p className="mb-2 text-xl  font-medium text-white">
 							Promotions and Discounts
 						</p>
-						<p className="text-sm font-bold text-gray-800">
+						<p className="text-sm font-bold text-white">
 							Promotions and discounts such as first-time rider discounts,
 							referral bonuses, and special offers for frequent riders.
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 hover:bg-red-400 transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4 text-white rounded-full">
 						<img src={icons} alt="" style={{ width: "170px" }} />
 					</div>
 					<div>
-						<p className="mb-2 text-xl  font-medium text-gray-900">
+						<p className="mb-2 text-xl  font-medium text-white">
 							Affordable fares at REAL TIME
 						</p>
-						<p className="text-sm font-bold text-gray-800">
+						<p className="text-sm font-bold text-white">
 							User and customer analytics
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 hover:bg-red-400 transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4  text-white rounded-full">
 						<img src={relax} alt="" style={{ width: "170px" }} />
 					</div>
 					<div>
-						<p className="mb-2 text-xl  font-medium text-gray-900">
+						<p className="mb-2 text-xl  font-medium text-white">
 							Comforting rides of your choice
 						</p>
-						<p className="text-sm font-bold text-gray-800">
+						<p className="text-sm font-bold text-white">
 							User and customer analytics
 						</p>
 					</div>

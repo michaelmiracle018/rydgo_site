@@ -139,7 +139,7 @@ const DriverSignUp = () => {
 							<div className="signup__btn">
 								<AnchorLink href={"#signUp"}>
 
-									<button>sign Up now</button>
+									<button>sign up now</button>
 								</AnchorLink>
 							</div>
 						</div>
