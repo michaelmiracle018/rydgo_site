@@ -16,9 +16,6 @@ import icons from "../../assets/images/ICONs-01.png";
 import relax from "../../assets/images/RELAX.png";
 
 const RidersPage = () => {
-
-
-	
 	return (
 		<>
 			<section className="relative bg-[url(bg-hd.png)] bg-cover bg-center bg-no-repeat z-[-1]">
@@ -130,7 +127,7 @@ const RidersPage = () => {
 			</div>
 
 			<div className="container px-6 py-4 mx-auto grid gap-6 mb-8 md:grid-cols-2 lg:grid-cols-2">
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4 text-white rounded-full">
 						<img src={alarm} alt="" style={{ width: "300px" }} />
 					</div>
@@ -145,7 +142,7 @@ const RidersPage = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4 text-white rounded-full">
 						<img src={numbers} alt="" style={{ width: "150px" }} />
 					</div>
@@ -159,7 +156,7 @@ const RidersPage = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4 text-white rounded-full">
 						<img src={review} alt="" style={{ width: "150px" }} />
 					</div>
@@ -172,7 +169,7 @@ const RidersPage = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4 text-white rounded-full">
 						<img src={promo} alt="" style={{ width: "250px" }} />
 					</div>
@@ -186,7 +183,7 @@ const RidersPage = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4 text-white rounded-full">
 						<img src={icons} alt="" style={{ width: "170px" }} />
 					</div>
@@ -199,7 +196,7 @@ const RidersPage = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
+				<div className="flex items-center p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm bg-[#ff1e00] hover:bg-[#ff5050] transition duration-300 ease-in-out">
 					<div className="p-3 mr-4  text-white rounded-full">
 						<img src={relax} alt="" style={{ width: "170px" }} />
 					</div>
