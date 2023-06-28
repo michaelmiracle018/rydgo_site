@@ -44,13 +44,13 @@ const Footer = () => {
 				<div className="footer__services">
 					<h3>Services</h3>
 					<ul>
-						<Link to="/food">
+						<Link to="/rides">
 							<li>Go</li>
 						</Link>
-						<Link to="/rydgro">
+						<Link to="/food">
 							<li>Eat</li>
 						</Link>
-						<Link to="/bike">
+						<Link to="/rydgro">
 							<li>Get</li>
 						</Link>
 						<Link to="/rydpay">
