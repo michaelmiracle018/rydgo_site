@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import driverImage from "../../assets/images/Drivers Page Top.png";
 import "./driver.scss";
 import google__app from "../../assets/images/Google Play.png";
-import apple__app from "../../assets/images/Google Play.png";
+import apple__app from "../../assets/images/App Store.png";
 import cash from "../../assets/icons/CARD.png";
 import time from "../../assets/icons/24-7.png";
 import referral from "../../assets/icons/REFERRAL.png";
